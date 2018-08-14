@@ -59,10 +59,10 @@ You will find that the **cmake log** will show that the status 'OpenNI' and 'Pri
 Some info is also given in this [link](https://www.packtpub.com/mapt/book/Application%20Development/9781785283840/1/ch01lvl1sec08/Choosing%20and%20using%20the%20right%20setup%20tools). ]
 
 Similarly if you want to install other packages like:
-* QT: for using several QT based GUI functions.
-* TBB: makes sure that the OpenCV library will take advantage of all the cores you have in your systems CPU.
-* V4L: video capture application programming interface for Linux. It supports many USB webcams, TV tuners, and other devices. Video4Linux is closely integrated with the Linux kernel.
-* VFVv3 and NEON: packages are used for cross compilation. (A cross compiler is a compiler capable of creating executable code for a platform other than the one on which the compiler is running).
+* **QT**: for using several QT based GUI functions.
+* **TBB**: makes sure that the OpenCV library will take advantage of all the cores you have in your systems CPU.
+* **V4L**: video capture application programming interface for Linux. It supports many USB webcams, TV tuners, and other devices. Video4Linux is closely integrated with the Linux kernel.
+* **VFVv3** and **NEON**: packages are used for cross compilation. (A cross compiler is a compiler capable of creating executable code for a platform other than the one on which the compiler is running).
 
 Then you have to modify the **cmake** command as follows:
 ```
@@ -87,7 +87,8 @@ sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_OPENNI=ON -D WITH_QT=ON -D WITH_T
 If some of these options throws errors, then remove those options.
 
 #### Building OpenCV from Source Using CMake with Contrib packages:
-[ If you also want to enable the opecv_contrib packages, then you have to add the line `-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ../` also.
+[ If you also want to enable the opecv_contrib packages, then you have to add the following line as well.
+`-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ../`
 You have to provide the path to the 'opencv_contrib/modules' folder. Since at the time of installation we will; be inside the 'opencv/release' folder, and the 
 'opencv_contrib' folder is inside the same directory as the 'opencv' folder (which may be the 'home' directory), that is why we keep the path as '../../opencv_contrib/modules'. 
 And then you have to give the path to the opencv source folder. That is why we write the '../' after that ].
