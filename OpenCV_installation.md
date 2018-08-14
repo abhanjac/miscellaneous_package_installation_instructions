@@ -70,7 +70,9 @@ sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_OPENNI=ON -D WITH_QT=ON -D WITH_T
 ```
 
 To also activate **OpenGL ( for Laptop )**:
-[ **NOTE:** OPENGL is used inside OpenCV for activating the OpenGL package for graphics.
+
+[ **NOTE:** OPENGL is used inside OpenCV for activating the OpenGL package for graphics. ]
+
 Add the option `-D WITH_OPENGL=ON`
 
 ```
@@ -78,6 +80,7 @@ sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_OPENNI=ON -D WITH_QT=ON -D WITH_T
 ```
 
 To activate  **OpenGL ( for Odroid XU4 )**:
+
 Add the option `-D WITH_OPENGL-ES=ON`.  **ES** meaning for Embedded system.
 
 ```
@@ -88,23 +91,27 @@ If some of these options throws errors, then remove those options.
 
 #### Building OpenCV from Source Using CMake with Contrib packages:
 [ If you also want to enable the opecv_contrib packages, then you have to add the following line as well.
+
 `-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ../`
-You have to provide the path to the 'opencv_contrib/modules' folder. Since at the time of installation we will; be inside the 'opencv/release' folder, and the 
-'opencv_contrib' folder is inside the same directory as the 'opencv' folder (which may be the 'home' directory), that is why we keep the path as '../../opencv_contrib/modules'. 
-And then you have to give the path to the opencv source folder. That is why we write the '../' after that ].
 
-Altogether the command will be like: 
+You have to provide the path to the **opencv_contrib/modules** folder. Since at the time of installation we will; be inside the **opencv/release** folder, and the 
+**opencv_contrib** folder is inside the same directory as the **opencv** folder (which may be the home directory), that is why we keep the path as `../../opencv_contrib/modules`. 
+And then you have to give the path to the opencv source folder. That is why we write the `../` after that.
 
+So, altogether the command will be like: 
+
+```
 sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D BUILD_NEW_PYTHON_SUPPORT=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_GTK=ON -D WITH_OPENNI=ON -D WITH_QT=ON -D WITH_TBB=ON -D BUILD_TBB=ON -D WITH_OPENGL=ON -D WITH_V4L=ON -D ENABLE_VFPV3=ON -D ENABLE_NEON=ON -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
+```
 
-REMEMBER that for Odroid XU4 there will be OPENGL-ES instead of OPENGL.
+REMEMBER that for **Odroid XU4** there will be **OPENGL-ES** instead of **OPENGL**.
 
 If available on intel processors, opencv exploits a royalty free subset of intel's Integrated Performance Primitives (IPP) library (IPPICV). 
 This library can be linked with the opencv during compilation and if done, then it replaces some of the corresponding low level optimized C code. 
-For this you have to add the following command during installation, 'cmake -D WITH_IPP=ON'. The speed improvement can be a lot. But you have to have 
-an intel processor for this, it will not happen on ARM processors.
-]
+For this you have to add the following command during installation, `cmake -D WITH_IPP=ON`. The speed improvement can be a lot. 
+But you have to have an intel processor for this, it will not happen on ARM processors and I have not tested it either.
 
+#### Installation:
 Next, type the following (while inside the 'opencv/release' directory):
 
 ```
