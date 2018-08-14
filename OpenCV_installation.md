@@ -158,7 +158,7 @@ python
 * Type  the following in the terminal: 
 ```
 g++ `pkg-config --cflags --libs opencv` -o test test.cpp
-g++ `[this is the left quote symbol, the one with the ~ key] pkg-config --cflags --libs opencv` [name of the libraries] -o test [name of the .exe file that you want to create] test.cpp [name of the program file]
+g++ `[this is the back tick symbol] pkg-config --cflags --libs opencv` [name of the libraries] -o test [name of the .exe file that you want to create] test.cpp [name of the program file]
 ```
 
 If this does not work then try this out:
@@ -167,5 +167,5 @@ g++ -o test test.cpp `pkg-config --cflags --libs opencv`
 g++ -o test [name of the .exe file that you want to create] test.cpp [name of the program file] `pkg-config --cflags --libs opencv` [name of the libraries]
 ```
 
-This is because some of these libraries may be archived libraries and so if you have to put the files that need them (like test.cpp) in front of these libraries to make them work.
+This is because some of these libraries may be archived libraries and so you have to put the files that need them (like test.cpp) in front of these libraries to make them work.
 
