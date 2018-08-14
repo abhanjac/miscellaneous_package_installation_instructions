@@ -150,48 +150,22 @@ python
 >>> detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 ```
 
-==============================================================
+# Running a C++ code for opencv written in a .cpp file by gcc compiler in linux on Odroid or laptop:
 
-Running a C++ code for opencv written in a .cpp file by gcc compiler in linux on BBB or laptop:
-===============================================================================================
-1. Make sure that the opencv is installed properly as per the above steps.
-2. After the C++ program is written, assume that the name of the program file is 'test.cpp' and you want the the 
-executable name to be 'test.exe'.
-3. To compile it go inside the directory where the test.cpp file is.
-4. Type  the following in the terminal: 
-	g++ `pkg-config --cflags --libs opencv` -o test test.cpp
-	g++ `[this is the left quote symbol, the one with the ~ key] pkg-config --cflags --libs opencv` [name of the libraries] -o test [name of the .exe file that you want to create] test.cpp [name of the program file]
+* Make sure that the opencv is installed properly as per the above steps.
+* After the C++ program is written, assume that the name of the program file is 'test.cpp' and you want the the executable name to be 'test.exe'.
+* To compile it go inside the directory where the test.cpp file is.
+* Type  the following in the terminal: 
+```
+g++ `pkg-config --cflags --libs opencv` -o test test.cpp
+g++ `[this is the left quote symbol, the one with the ~ key] pkg-config --cflags --libs opencv` [name of the libraries] -o test [name of the .exe file that you want to create] test.cpp [name of the program file]
+```
 
-if this does not work then try this out:
-	g++ -o test test.cpp `pkg-config --cflags --libs opencv`
-	g++ -o test [name of the .exe file that you want to create] test.cpp [name of the program file] `[this is the left quote symbol, the one with the ~ key] pkg-config --cflags --libs opencv` [name of the libraries]
+If this does not work then try this out:
+```
+g++ -o test test.cpp `pkg-config --cflags --libs opencv`
+g++ -o test [name of the .exe file that you want to create] test.cpp [name of the program file] `pkg-config --cflags --libs opencv` [name of the libraries]
+```
 
-This is because some of these libraries may be archived libraries and so if you have to put the files that need them 
-(like 'test.cpp') in front of these libraries to meke them work
-
-===============================================================================================
-
-Installing zbar tools for qr codes and barcode detection:
-===============================================================================================
-(https://www.howtoinstall.co/en/ubuntu/trusty/zbar-tools)
-(https://github.com/ZBar/ZBar)
-
-sudo apt-get update
-sudo apt-get install zbar-tools libzbar-dev
-
-To run the code detection via command line, first save an image that has a qr code (e.g. sampleQR.png), the run the following command.
-zbarimg sampleQR.png
-
-This will give a message like 
-
-QR-Code:http://adafru.it/qr
-scanned 1 barcode symbols from 1 images in 0.02 seconds
-
-The adafruit is the site from where the image is downloaded.
-This only works for png files, not jpg files.
-Check if the zbar.h file is included in the /usr/include folder.
-If that is included, then you can include in the opencv code as "#include<zbar.h>". You also have to use the "using namespace zbar;" command and while compiling the code you have to use the 
-following command
-g++ -o sift_pattern_4 sift_pattern_4.cpp `pkg-config --cflags --libs opencv` -lzbar 
-===============================================================================================
+This is because some of these libraries may be archived libraries and so if you have to put the files that need them (like test.cpp) in front of these libraries to make them work.
 
