@@ -2,41 +2,47 @@
 Official instructions are given in [Instructions link](http://docs.opencv.org/3.0-beta/doc/tutorials/introduction/linux_install/linux_install.html)
 But the following instruction also have added options for a more elaborate installation.
 
+#### Install Dependencies:
 ```
 sudo apt-get update
 sudo apt-get upgrade
-[compiler] sudo apt-get install build-essential 
-[required] sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev 
-[optional] sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libjasper-dev libdc1394-22-dev 
-[optional] sudo apt-get install checkinstall yasm libxine2-dev libv4l-dev libav-tools
-[optional] sudo apt-get install unzip libdc1394-22 libpng12-dev libtiff5-dev tar dtrx 
-[optional] sudo apt-get install libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 
-[optional] sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libqt4-dev libmp3lame-dev 
-
+sudo apt-get install build-essential 
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev 
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libjasper-dev libdc1394-22-dev 
+sudo apt-get install checkinstall yasm libxine2-dev libv4l-dev libav-tools
+sudo apt-get install unzip libdc1394-22 libpng12-dev libtiff5-dev tar dtrx 
+sudo apt-get install libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 
+sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libqt4-dev libmp3lame-dev 
 ```
-or all together:
 
-sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev checkinstall yasm libxine2-dev libv4l-dev libav-tools unzip libdc1394-22 libpng12-dev libtiff5-dev tar dtrx libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libqt4-dev libfaac-dev libmp3lame-dev
-
-Getting OpenCV Source Code:
-You can use the latest stable OpenCV version available in sourceforge or you can grab the latest snapshot from our 
-Git repository. "https://github.com/opencv/opencv.git" by "sudo git clone https://github.com/opencv/opencv.git"
+#### Getting OpenCV Source Code:
+```
+sudo git clone https://github.com/opencv/opencv.git
+```
 
 If you get an error like this:
-" fatal: unable to access 'https://github.com/opencv/opencv.git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none ""
-it means that the computer is not trusting the github.
+```
+fatal: unable to access 'https://github.com/opencv/opencv.git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+```
+It means that the computer is not trusting the github.
 The in that case if you are not much worried about the security, then you can ask it to blindly trust github, by typing this command "export GIT_SSL_NO_VERIFY=1".
-There is another way, which is listed in this link:	http://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c
+There is another way, which is listed in this [link](http://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c).
 
-Getting the Cutting-edge OpenCV from the Git Repository: (the cutting edge version might not be always stable but many bugs may be fixed in this one)
-you can grab from "https://github.com/Itseez/opencv.git" by "sudo git clone https://github.com/Itseez/opencv.git"
-
+#### Getting the Cutting-edge OpenCV from the Git Repository:
+**(the cutting edge version might not be always stable but many bugs may be fixed in this one)**
+```
+sudo git clone https://github.com/Itseez/opencv.git
+```
 The above steps will create the 'opencv' folder in the current directory.
 
-If you also want the features like the 'SIFT' or 'SURF' algorithms, that are not free, you have to downoad the opencv_contrib package too.
-This can be down loaded from "https://github.com/opencv/opencv_contrib.git" by "sudo git clone https://github.com/opencv/opencv_contrib.git"
-
+#### Getting the Contrib packages:
+If you also want the features like the **SIFT** or **SURF** algorithms, that are not free, you have to downoad the opencv_contrib package too.
+This can be down loaded by
+```
+sudo git clone https://github.com/opencv/opencv_contrib.git
+```
 This will create the 'opencv_contrib' folder in the current directory.
+
 
 Building OpenCV from Source Using CMake, Using the Command Line:
 Create a temporary directory, which we denote as <cmake_binary_dir>, where you want to put the generated Makefiles, 
