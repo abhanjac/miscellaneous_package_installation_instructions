@@ -4,7 +4,9 @@ Official instructions are given in [Instructions link](https://dev.px4.io/en/rob
 But the following instruction also have added information about some errors encountered during installation.
 
 #### Install Dependencies
+```
 pip install future
+```
 
 
 #### Clone the Repository:
