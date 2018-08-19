@@ -1,4 +1,4 @@
-# OpenCV3 installation instruction in Ubuntu 16.04 LTS or laptop or Odroid XU4:
+# OpenCV3 installation instruction in Ubuntu 16.04 LTS on laptop or Odroid XU4:
 
 Official instructions are given in [Instructions link](http://docs.opencv.org/3.0-beta/doc/tutorials/introduction/linux_install/linux_install.html)
 But the following instruction also have added options for a more elaborate installation.
