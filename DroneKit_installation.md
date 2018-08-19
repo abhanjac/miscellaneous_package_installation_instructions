@@ -32,9 +32,6 @@ The in that case if you are not much worried about the security, then you can as
 There is another way, which is listed in this [link](http://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c).
 
 
-#### Getting the Contrib packages:
-If you also want the features like the **SIFT** or **SURF** algorithms, that are not free, you have to downoad the opencv_contrib package too.
-This can be down loaded by
 ```
 sudo git clone https://github.com/opencv/opencv_contrib.git
 ```
