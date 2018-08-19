@@ -39,11 +39,6 @@ But for this the OpenNI should be installed before installation of openCV.
 You will find that the **cmake log** will show that the status 'OpenNI' and 'PrimeSensor' in CMake log is shown to be **OK**.
 Some info is also given in this [link](https://www.packtpub.com/mapt/book/Application%20Development/9781785283840/1/ch01lvl1sec08/Choosing%20and%20using%20the%20right%20setup%20tools). ]
 
-Similarly if you want to install other packages like:
-* **QT**: for using several QT based GUI functions.
-* **TBB**: makes sure that the OpenCV library will take advantage of all the cores you have in your systems CPU.
-* **V4L**: video capture application programming interface for Linux. It supports many USB webcams, TV tuners, and other devices. Video4Linux is closely integrated with the Linux kernel.
-* **VFVv3** and **NEON**: packages are used for cross compilation. (A cross compiler is a compiler capable of creating executable code for a platform other than the one on which the compiler is running).
 
 Then you have to modify the **cmake** command as follows:
 ```
