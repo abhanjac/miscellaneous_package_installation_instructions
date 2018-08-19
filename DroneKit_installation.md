@@ -41,15 +41,6 @@ Some info is also given in this [link](https://www.packtpub.com/mapt/book/Applic
 
 
 
-To also activate **OpenGL ( for Laptop )**:
-
-[ **NOTE:** OPENGL is used inside OpenCV for activating the OpenGL package for graphics. ]
-
-Add the option `-D WITH_OPENGL=ON`
-
-```
-sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_OPENNI=ON -D WITH_QT=ON -D WITH_TBB=ON -D BUILD_TBB=ON -D WITH_OPENGL=ON -D WITH_V4L=ON -D ENABLE_VFPV3=ON -D ENABLE_NEON=ON -D CMAKE_INSTALL_PREFIX=/usr/local ..
-```
 
 To activate  **OpenGL ( for Odroid XU4 )**:
 
