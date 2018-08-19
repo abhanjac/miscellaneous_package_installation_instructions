@@ -31,12 +31,6 @@ It means that the computer is not trusting the github.
 The in that case if you are not much worried about the security, then you can ask it to blindly trust github, by typing this command `export GIT_SSL_NO_VERIFY=1`.
 There is another way, which is listed in this [link](http://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c).
 
-#### Getting the Cutting-edge OpenCV from the Git Repository:
-**(the cutting edge version might not be always stable but many bugs may be fixed in this one)**
-```
-sudo git clone https://github.com/Itseez/opencv.git
-```
-The above steps will create the **opencv** folder in the current directory.
 
 #### Getting the Contrib packages:
 If you also want the features like the **SIFT** or **SURF** algorithms, that are not free, you have to downoad the opencv_contrib package too.
