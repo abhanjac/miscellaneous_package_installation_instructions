@@ -40,7 +40,6 @@ You will find that the **cmake log** will show that the status 'OpenNI' and 'Pri
 Some info is also given in this [link](https://www.packtpub.com/mapt/book/Application%20Development/9781785283840/1/ch01lvl1sec08/Choosing%20and%20using%20the%20right%20setup%20tools). ]
 
 
-Then you have to modify the **cmake** command as follows:
 ```
 sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_OPENNI=ON -D WITH_QT=ON -D WITH_TBB=ON -D BUILD_TBB=ON -D WITH_V4L=ON -D ENABLE_VFPV3=ON -D ENABLE_NEON=ON -D CMAKE_INSTALL_PREFIX=/usr/local ..
 ```
