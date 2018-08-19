@@ -8,7 +8,6 @@ But the following instruction also have added information about some errors enco
 pip install future
 ```
 
-
 #### Clone the Repository:
 ```
 sudo apt-get update
