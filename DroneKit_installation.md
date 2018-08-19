@@ -32,9 +32,6 @@ The in that case if you are not much worried about the security, then you can as
 There is another way, which is listed in this [link](http://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c).
 
 
-```
-sudo git clone https://github.com/opencv/opencv_contrib.git
-```
 This will create the **opencv_contrib** folder in the current directory. This should be **outside** the **opencv** directory.
 
 #### Building OpenCV from Source Using CMake without Contrib packages:
