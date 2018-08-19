@@ -3,22 +3,26 @@
 Official instructions are given in [Instructions link](https://dev.px4.io/en/robotics/dronekit.html)
 But the following instruction also have added information about some errors encountered during installation.
 
-#### Clone the repository:
+#### Install Dependencies
+
+#### Clone the Repository:
 ```
 sudo apt-get update
 git clone https://github.com/dronekit/dronekit-python.git
 ```
 
-#### Build repository:
+#### Build Repository:
 ```
 cd ./dronekit-python
 sudo python setup.py build
 ```
 
-#### Run installation:
+#### Run Installation:
 ```
 sudo python setup.py install
 ```
+
+
 
 It means that the computer is not trusting the github.
 The in that case if you are not much worried about the security, then you can ask it to blindly trust github, by typing this command `export GIT_SSL_NO_VERIFY=1`.
