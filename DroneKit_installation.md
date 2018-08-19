@@ -20,9 +20,6 @@ sudo python setup.py build
 sudo python setup.py install
 ```
 
-```
-fatal: unable to access 'https://github.com/opencv/opencv.git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
-```
 It means that the computer is not trusting the github.
 The in that case if you are not much worried about the security, then you can ask it to blindly trust github, by typing this command `export GIT_SSL_NO_VERIFY=1`.
 There is another way, which is listed in this [link](http://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c).
