@@ -20,7 +20,6 @@ sudo python setup.py build
 sudo python setup.py install
 ```
 
-If you get an error like this:
 ```
 fatal: unable to access 'https://github.com/opencv/opencv.git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
 ```
