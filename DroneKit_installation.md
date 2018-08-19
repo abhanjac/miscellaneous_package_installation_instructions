@@ -15,11 +15,6 @@ cd ./dronekit-python
 sudo python setup.py build
 ```
 
-#### Getting OpenCV Source Code:
-```
-sudo git clone https://github.com/opencv/opencv.git
-```
-
 If you get an error like this:
 ```
 fatal: unable to access 'https://github.com/opencv/opencv.git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
