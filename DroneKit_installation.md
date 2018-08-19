@@ -33,12 +33,6 @@ There is another way, which is listed in this [link](http://stackoverflow.com/qu
 
 
 
-```
-cd ~/opencv
-mkdir release
-cd release
-sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
-```
 
 [ **NOTE:** Type `cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_OPENNI=ON -D CMAKE_INSTALL_PREFIX=/usr/local ..` if you also want the **OpenNI** package to be configured with OpenCV. 
 But for this the OpenNI should be installed before installation of openCV. 
