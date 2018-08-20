@@ -48,3 +48,6 @@ This link also asks to install the packages **greenlet** and **gevent** by **eas
 but you may also do it using **pip** (suggested in this [link](https://askubuntu.com/questions/350312/i-am-not-able-to-install-easy-install-in-my-ubuntu)) as shown in **Install Dependencies**.
 
 After resolving the errors, try running `sudo python setup.py install` again.
+
+#### Run and Check:
+Now after installation is done without errors, try to check if it can be imported into python without any errors
