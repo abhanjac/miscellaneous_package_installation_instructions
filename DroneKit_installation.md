@@ -32,4 +32,5 @@ If there is an error saying:
 ```
 ERROR: /bin/sh: 1: xslt-config: not found
 ```
+[ **NOTE:** This error is written not at the very end of the set of printed messages in the terminal, but a little before that. ]
 
