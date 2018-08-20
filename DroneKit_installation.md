@@ -28,3 +28,8 @@ sudo python setup.py build
 sudo python setup.py install
 ```
 
+If there is an error saying:
+```
+ERROR: /bin/sh: 1: xslt-config: not found
+```
+
