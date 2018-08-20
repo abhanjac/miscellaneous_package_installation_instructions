@@ -16,3 +16,11 @@ But the following instruction also have added information about some errors enco
 sudo apt-get update
 git clone https://github.com/dronekit/dronekit-python.git
 ```
+
+#### Build Repository:
+```
+cd ./dronekit-python
+sudo python setup.py build
+```
+
+
