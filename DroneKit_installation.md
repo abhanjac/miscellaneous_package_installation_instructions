@@ -34,3 +34,4 @@ ERROR: /bin/sh: 1: xslt-config: not found
 ```
 [ **NOTE:** This error is written not at the very end of the set of printed messages in the terminal, but a little before that. ]
 
+Then that means you do not have all the modules of the dependencies **2** as mentioned earlier under **Install Dependencies**.
