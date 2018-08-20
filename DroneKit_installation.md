@@ -36,3 +36,5 @@ ERROR: /bin/sh: 1: xslt-config: not found
 
 Then that means you do not have all the modules of the dependencies **2** as mentioned earlier under **Install Dependencies**.
 More help is available in this [link](https://stackoverflow.com/questions/5178416/pip-install-lxml-error).
+
+If there is an error saying:
