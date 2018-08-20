@@ -52,3 +52,7 @@ After resolving the errors, try running `sudo python setup.py install` again.
 #### Run and Check:
 Now after installation is done without errors, try to check if it can be imported into python without any errors
 
+```
+python
+>>> import dronekit
+```
