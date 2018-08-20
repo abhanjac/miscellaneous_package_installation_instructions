@@ -41,3 +41,6 @@ If there is an error saying:
 ```
 error: Setup script exited with error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
 ```
+
+Then this means you do not have all the modules of the dependencies **3** or **4** as mentioned earlier under **Install Dependencies**.
+More help is available in this [link](https://stackoverflow.com/questions/26053982/setup-script-exited-with-error-command-x86-64-linux-gnu-gcc-failed-with-exit).
