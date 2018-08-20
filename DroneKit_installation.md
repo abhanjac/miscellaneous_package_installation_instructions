@@ -44,3 +44,5 @@ error: Setup script exited with error: command 'x86_64-linux-gnu-gcc' failed wit
 
 Then this means you do not have all the modules of the dependencies **3** or **4** as mentioned earlier under **Install Dependencies**.
 More help is available in this [link](https://stackoverflow.com/questions/26053982/setup-script-exited-with-error-command-x86-64-linux-gnu-gcc-failed-with-exit).
+This link also asks to install the packages **greenlet** and **gevent** by **easy_install**, 
+but you may also do it using **pip** (suggested in this [link](https://askubuntu.com/questions/350312/i-am-not-able-to-install-easy-install-in-my-ubuntu)) as shown in **Install Dependencies**.
