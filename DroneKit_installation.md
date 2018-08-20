@@ -23,4 +23,8 @@ cd ./dronekit-python
 sudo python setup.py build
 ```
 
+#### Run Installation:
+```
+sudo python setup.py install
+```
 
