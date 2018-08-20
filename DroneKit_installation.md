@@ -10,3 +10,9 @@ But the following instruction also have added information about some errors enco
 4. `sudo apt-get install libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev libssl-dev`
 5. `sudo pip install greenlet`
 6. `sudo pip install gevent`
+
+#### Clone the Repository:
+```
+sudo apt-get update
+git clone https://github.com/dronekit/dronekit-python.git
+```
