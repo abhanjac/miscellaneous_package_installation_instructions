@@ -38,3 +38,6 @@ Then that means you do not have all the modules of the dependencies **2** as men
 More help is available in this [link](https://stackoverflow.com/questions/5178416/pip-install-lxml-error).
 
 If there is an error saying:
+```
+error: Setup script exited with error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+```
