@@ -170,3 +170,9 @@ g++ -o test [name of the .exe file that you want to create] test.cpp [name of th
 
 This is because some of these libraries may be archived libraries and so you have to put the files that need them (like test.cpp) in front of these libraries to make them work.
 
+# Removing OpenCV:
+
+If you remove the **opencv** folder (where you cloned the package) after the installation is complete, even then you can use **cv2**, as the **.so** files are all in the **/usr/local/lib** directory.
+If you want to remove or uninstall opencv, then remove all the files having names starting with **libopencv** from this **/usr/local/lib** directory.
+
+
