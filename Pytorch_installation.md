@@ -1,5 +1,10 @@
 # Installing Pytorch from source on Odroid XU4 (this is for python 2.7):
 
+Goto [pytorch website](pytorch.org).
+Select the options **linux**, **source**, **python 2.7** in the type of installation needed.
+(This is to install the pytorch from source with python 2.7. The CUDA is only useful if you have NVIDIA graphics card)
+
+
 Official instructions are given in [Instructions link](http://docs.opencv.org/3.0-beta/doc/tutorials/introduction/linux_install/linux_install.html)
 But the following instruction also have added options for a more elaborate installation.
 
