@@ -12,8 +12,8 @@ All the official instructions are given here. But the following instruction also
 #### Install Dependencies:
 ```
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install build-essential 
+sudo apt-get install python-numpy cmake gcc
+sudo pip install pyyaml typing
 sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev 
 sudo apt-get install libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 
 sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libqt4-dev libmp3lame-dev 
