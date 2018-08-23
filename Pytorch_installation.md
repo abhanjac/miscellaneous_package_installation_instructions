@@ -14,14 +14,14 @@ All the official instructions are given here. But the following instruction also
 sudo apt-get update
 sudo apt-get install python-numpy cmake gcc
 sudo pip install pyyaml typing
-sudo apt-get install libffi-dev                 [ https://github.com/markwal/OctoPrint-PolarCloud/issues/19 ]
 sudo pip install cffi 
 sudo pip install -U pip setuptools
 sudo pip install leveldb==0.18
-
-sudo apt-get install libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 
-sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libqt4-dev libmp3lame-dev 
+sudo apt-get install libopenblas-dev cython libatlas-dev m4 libblas-dev cmake
+sudo apt-get install libffi-dev
 ```
+
+
 
 #### Getting OpenCV Source Code:
 ```
