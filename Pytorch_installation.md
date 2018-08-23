@@ -21,7 +21,7 @@ sudo apt-get install libopenblas-dev cython libatlas-dev m4 libblas-dev cmake
 sudo apt-get install libffi-dev
 ```
 
-
+If you have trouble installing the last package **libffi-dev** then you can refer to this [link]([ https://github.com/markwal/OctoPrint-PolarCloud/issues/19 ]).
 
 #### Getting OpenCV Source Code:
 ```
