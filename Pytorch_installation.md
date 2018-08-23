@@ -4,9 +4,10 @@ Goto [pytorch website](pytorch.org).
 Select the options **linux**, **source**, **python 2.7** in the type of installation needed.
 (This is to install the pytorch from source with python 2.7. The CUDA is only useful if you have NVIDIA graphics card)
 
+This will direct you to [this](https://github.com/pytorch/pytorch#from-source) page.
+But you can also directly go to there using the link [https://github.com/pytorch/pytorch#from-source](https://github.com/pytorch/pytorch#from-source).
 
-Official instructions are given in [Instructions link](http://docs.opencv.org/3.0-beta/doc/tutorials/introduction/linux_install/linux_install.html)
-But the following instruction also have added options for a more elaborate installation.
+All the official instructions are given here. But the following instruction also have added instructions and solutions to some errors faced during installation.
 
 #### Install Dependencies:
 ```
