@@ -42,6 +42,13 @@ export NO_DISTRIBUTED=1
 sudo -E MAX_JOBS=2 python setup.py install
 ```
 
+Usually you have to change the swap space for installing pytorch, but that is because the installation process tends ot create **8** threads while installing, 
+which these small computers may not be able to handle. But there is the flag **MAX_JOBS** which if set to **1** or **2** will force to create only that many installation threads.
+Hence, we don't need to change the swap space, at least that is what we got on the Odroid XU4.
+But the installation process may take more time. This [link](https://github.com/pytorch/pytorch/issues/7841) also shows the use of the **MAX_JOBS** option.
+
+Do not forget to export **NO_CUDA** and NO_DISTRIBUTED and also do not forget the '-E' while calling the 'setup.py install'. 
+The -E is important here to preserve the environmental variables (NO_DISTRIBUTED and NO_CUDA) ]
 
 
 
