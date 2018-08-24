@@ -54,9 +54,12 @@ This should be able to install the pytorch package into the Odroid.
 
 #### A wierd error faced during installation:
 
-However, during our installation, we faced an error like the following:
+However, during our installation, we faced an error like the following (this error may crop up even at 99%):
+
+```
 
 
+```
 
 
 
