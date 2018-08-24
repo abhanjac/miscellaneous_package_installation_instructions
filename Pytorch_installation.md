@@ -148,7 +148,7 @@ python
 >>> print(x)
 ```
 
-### Installing torchvision on Odroid:
+### Installing torchvision on Odroid XU4:
 
 This is straight forward and we can follow this [link](https://github.com/pytorch/vision).
 
