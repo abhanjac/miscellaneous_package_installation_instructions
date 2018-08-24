@@ -105,14 +105,11 @@ Failed to run 'bash tools/build_pytorch_libs.sh --use-nnpack caffe2 nanopb libsh
 
 This is a big error message, but it seemed that this is not a problem with pytorch, but with Odroid. The packages **dlclose, dlsym, dlopen, dlerror** cannot be referenced during installation.
 
+Then you have to do a fresh install. You can delete the pytorch directory and reclone it and start fresh, but usually if you just run `sudo python setup.py clean`, then all the build files are cleaned and that is good enough.
 
+To fix this error, you have to use the option **LDFLAGS='-WL, --no-as-needed -ldl'** to the command **python setup.py install** to create the references to **dlclose, dlopen** etc.
 
-
-
-
-Then you have to delete the pytorch/build directory or delete the pytorch directory and re-clone it or run sudo python setup.py clean to clean the build files.
-Then you have to pass the LDFLAGS='-WL, --no-as-needed -ldl' to the command 'python setup.py install' to create the references to dlclose, dlopen etc. 
-[ https://github.com/Intel-Media-SDK/MediaSDK/issues/34 ]
+This solution is obtained by the combined steps mentioned in the [link1](https://github.com/Intel-Media-SDK/MediaSDK/issues/34), 
 [ https://projects.coin-or.org/Ipopt/ticket/229 ]
 [ https://stackoverflow.com/questions/956640/linux-c-error-undefined-reference-to-dlopen ]
 
