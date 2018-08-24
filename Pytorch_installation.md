@@ -51,16 +51,59 @@ Do not forget to export **NO_CUDA** and **NO_DISTRIBUTED** and also do not forge
 The **-E** is important here to preserve the environmental variables (NO_DISTRIBUTED and NO_CUDA).
 
 This should be able to install the pytorch package into the Odroid.
+The overall ins
 
 #### A wierd error faced during installation:
 
 However, during our installation, we faced an error like the following (this error may crop up even at 99%):
 
 ```
-
-
+[ 96%] Built target torch
+[ 96%] Building CXX object caffe2/torch/CMakeFiles/test_jit.dir/csrc/jit/test_jit.cpp.o
+[ 96%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/any.cpp.o
+[ 96%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/cursor.cpp.o
+[ 96%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/integration.cpp.o
+[ 96%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/main.cpp.o
+[ 96%] Linking CXX executable ../../bin/test_jit
+../../lib/libtorch.so.1: undefined reference to `dlclose'
+../../lib/libtorch.so.1: undefined reference to `dlsym'
+../../lib/libtorch.so.1: undefined reference to `dlopen'
+../../lib/libtorch.so.1: undefined reference to `dlerror'
+collect2: error: ld returned 1 exit status
+caffe2/torch/CMakeFiles/test_jit.dir/build.make:97: recipe for target 'bin/test_jit' failed
+make[2]: *** [bin/test_jit] Error 1
+CMakeFiles/Makefile2:2296: recipe for target 'caffe2/torch/CMakeFiles/test_jit.dir/all' failed
+make[1]: *** [caffe2/torch/CMakeFiles/test_jit.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 96%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/misc.cpp.o
+[ 97%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/module.cpp.o
+[ 97%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/modules.cpp.o
+[ 97%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/optim.cpp.o
+[ 97%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/parallel.cpp.o
+[ 97%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/rnn.cpp.o
+[ 98%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/sequential.cpp.o
+[ 98%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/serialization.cpp.o
+[ 98%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/static.cpp.o
+[ 98%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/tensor_cuda.cpp.o
+[ 98%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/tensor.cpp.o
+[ 98%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/tensor_options.cpp.o
+[100%] Building CXX object caffe2/torch/CMakeFiles/test_api.dir/__/test/cpp/api/tensor_options_cuda.cpp.o
+[100%] Linking CXX executable ../../bin/test_api
+../../lib/libtorch.so.1: undefined reference to `dlclose'
+../../lib/libtorch.so.1: undefined reference to `dlsym'
+../../lib/libtorch.so.1: undefined reference to `dlopen'
+../../lib/libtorch.so.1: undefined reference to `dlerror'
+collect2: error: ld returned 1 exit status
+caffe2/torch/CMakeFiles/test_api.dir/build.make:513: recipe for target 'bin/test_api' failed
+make[2]: *** [bin/test_api] Error 1
+CMakeFiles/Makefile2:2336: recipe for target 'caffe2/torch/CMakeFiles/test_api.dir/all' failed
+make[1]: *** [caffe2/torch/CMakeFiles/test_api.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2
+Failed to run 'bash tools/build_pytorch_libs.sh --use-nnpack caffe2 nanopb libshm gloo THD'
 ```
 
+This is a big error message, but it seemed that this is not a problem with pytorch, but with Odroid. The packages **dlclose, dlsym, dlopen, dlerror** cannot be referenced during installation.
 
 
 
