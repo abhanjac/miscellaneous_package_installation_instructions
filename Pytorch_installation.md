@@ -23,9 +23,9 @@ sudo apt-get install libffi-dev
 
 If you have trouble installing the last package **libffi-dev** then you can refer to this [link]([ https://github.com/markwal/OctoPrint-PolarCloud/issues/19 ]).
 
-#### Getting OpenCV Source Code:
+#### Getting Pytorch from source:
 ```
-sudo git clone https://github.com/opencv/opencv.git
+sudo git clone --recursive https://github.com/pytorch/pytorch.git
 ```
 
 If you get an error like this:
