@@ -109,11 +109,9 @@ Then you have to do a fresh install. You can delete the pytorch directory and re
 
 To fix this error, you have to use the option **LDFLAGS='-WL, --no-as-needed -ldl'** to the command **python setup.py install** to create the references to **dlclose, dlopen** etc.
 
-This solution is obtained by the combined steps mentioned in the [link1](https://github.com/Intel-Media-SDK/MediaSDK/issues/34), 
-[ https://projects.coin-or.org/Ipopt/ticket/229 ]
-[ https://stackoverflow.com/questions/956640/linux-c-error-undefined-reference-to-dlopen ]
+This solution is obtained by the combined steps mentioned in the [link1](https://github.com/Intel-Media-SDK/MediaSDK/issues/34), [link2](https://projects.coin-or.org/Ipopt/ticket/229) and [link3](https://stackoverflow.com/questions/956640/linux-c-error-undefined-reference-to-dlopen).
 
-[ This is how you pass LDFLAGS into 'python setup.py' through command line https://stackoverflow.com/questions/8111754/how-to-pass-flags-to-a-distutils-extension ]
+[This](https://stackoverflow.com/questions/8111754/how-to-pass-flags-to-a-distutils-extension) is how you pass **LDFLAGS** into the **python setup.py** command.
                                                                                    
 So now the command will be like:
 
