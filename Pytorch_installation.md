@@ -115,9 +115,10 @@ This solution is obtained by the combined steps mentioned in the [link1](https:/
                                                                                    
 So now the command will be like:
 
-sudo python setup.py clean          [ for cleaning the build files ]
+```
+sudo python setup.py clean
 sudo -E MAX_JOBS=2 LDFLAGS="-Wl,--no-as-needed -ldl" python setup.py install
-
+```
 
 NOTE: you can also cross check that when you did not use the LDFLAGS='-WL, --no-as-needed -ldl' argument, the cmake command generated in the very beginning of the installation was like the following:
 
