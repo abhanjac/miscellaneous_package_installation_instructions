@@ -34,7 +34,13 @@ sudo git clone --recursive https://github.com/pytorch/pytorch.git
 
 Now go to the pytorch directory and run the **setup.py** file.
 
-
+```
+cd pytorch
+sudo git submodule update --init
+export NO_CUDA=1
+export NO_DISTRIBUTED=1
+sudo -E MAX_JOBS=2 python setup.py install
+```
 
 
 
