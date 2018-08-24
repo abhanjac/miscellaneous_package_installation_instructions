@@ -50,6 +50,9 @@ But the installation process may take more time. This [link](https://github.com/
 Do not forget to export **NO_CUDA** and **NO_DISTRIBUTED** and also do not forget the **-E** while calling the **setup.py install**. 
 The **-E** is important here to preserve the environmental variables (NO_DISTRIBUTED and NO_CUDA).
 
+This should be able to install the pytorch package into the Odroid.
+
+#### A wierd error faced during installation:
 
 
 
