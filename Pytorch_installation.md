@@ -150,3 +150,4 @@ python
 
 ### Installing torchvision on Odroid:
 
+This is straight forward.
