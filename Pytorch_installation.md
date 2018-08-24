@@ -1,6 +1,6 @@
 # Installing Pytorch from source on Odroid XU4 (this is for python 2.7):
 
-Goto [pytorch website](pytorch.org).
+Go to [pytorch website](pytorch.org).
 Select the options **linux**, **source**, **python 2.7** in the type of installation needed.
 (This is to install the pytorch from source with python 2.7. The CUDA is only useful if you have NVIDIA graphics card)
 
@@ -27,6 +27,18 @@ If you have trouble installing the last package **libffi-dev** then you can refe
 ```
 sudo git clone --recursive https://github.com/pytorch/pytorch.git
 ```
+
+[ **NOTE:** Pleasu use the option **--recursive** here. ]
+
+##### Installation:
+
+Now go to the pytorch directory and run the **setup.py** file.
+
+
+
+
+
+
 
 If you get an error like this:
 ```
