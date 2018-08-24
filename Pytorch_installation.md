@@ -48,7 +48,7 @@ Hence, we don't need to change the swap space, at least that is what we got on t
 But the installation process may take more time. This [link](https://github.com/pytorch/pytorch/issues/7841) also shows the use of the **MAX_JOBS** option.
 
 Do not forget to export **NO_CUDA** and **NO_DISTRIBUTED** and also do not forget the **-E** while calling the **setup.py install**. 
-The -E is important here to preserve the environmental variables (NO_DISTRIBUTED and NO_CUDA) ]
+The **-E** is important here to preserve the environmental variables (NO_DISTRIBUTED and NO_CUDA) ]
 
 
 
