@@ -51,7 +51,7 @@ Do not forget to export **NO_CUDA** and **NO_DISTRIBUTED** and also do not forge
 The **-E** is important here to preserve the environmental variables (NO_DISTRIBUTED and NO_CUDA).
 
 This should be able to install the pytorch package into the Odroid.
-The overall ins
+The overall installation may take **an hour**.
 
 #### A wierd error faced during installation:
 
@@ -104,6 +104,52 @@ Failed to run 'bash tools/build_pytorch_libs.sh --use-nnpack caffe2 nanopb libsh
 ```
 
 This is a big error message, but it seemed that this is not a problem with pytorch, but with Odroid. The packages **dlclose, dlsym, dlopen, dlerror** cannot be referenced during installation.
+
+
+
+
+
+
+Then you have to delete the pytorch/build directory or delete the pytorch directory and re-clone it or run sudo python setup.py clean to clean the build files.
+Then you have to pass the LDFLAGS='-WL, --no-as-needed -ldl' to the command 'python setup.py install' to create the references to dlclose, dlopen etc. 
+[ https://github.com/Intel-Media-SDK/MediaSDK/issues/34 ]
+[ https://projects.coin-or.org/Ipopt/ticket/229 ]
+[ https://stackoverflow.com/questions/956640/linux-c-error-undefined-reference-to-dlopen ]
+
+[ This is how you pass LDFLAGS into 'python setup.py' through command line https://stackoverflow.com/questions/8111754/how-to-pass-flags-to-a-distutils-extension ]
+                                                                                   
+So now the command will be like:
+
+sudo python setup.py clean          [ for cleaning the build files ]
+sudo -E MAX_JOBS=2 LDFLAGS="-Wl,--no-as-needed -ldl" python setup.py install
+
+
+NOTE: you can also cross check that when you did not use the LDFLAGS='-WL, --no-as-needed -ldl' argument, the cmake command generated in the very beginning of the installation was like the following:
+
+cmake .. -DBUILDING_WITH_TORCH_LIBS=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_CAFFE2=0 -DBUILD_TORCH=ON -DBUILD_ATEN=ON -DBUILD_PYTHON=0 -DBUILD_BINARY=OFF -DBUILD_SHARED_LIBS=ON -DONNX_NAMESPACE=onnx_torch -DUSE_CUDA=0 -DUSE_ROCM=0 -DUSE_NNPACK=1 -DCUDNN_INCLUDE_DIR= -DCUDNN_LIB_DIR= -DCUDNN_LIBRARY= -DUSE_MKLDNN=0 -DMKLDNN_INCLUDE_DIR= -DMKLDNN_LIB_DIR= -DMKLDNN_LIBRARY= -DCMAKE_INSTALL_PREFIX=/home/odroid/pytorch/torch/lib/tmp_install -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_C_FLAGS= -DCMAKE_CXX_FLAGS= '-DCMAKE_EXE_LINKER_FLAGS=-L"/home/odroid/pytorch/torch/lib/tmp_install/lib"  -Wl,-rpath,$ORIGIN ' '-DCMAKE_SHARED_LINKER_FLAGS=-L"/home/odroid/pytorch/torch/lib/tmp_install/lib"  -Wl,-rpath,$ORIGIN ' -DCMAKE_PREFIX
+
+But after using the LDFLAGS='-WL, --no-as-needed -ldl' argument, now the cmake command generated is like:
+
+cmake .. -DBUILDING_WITH_TORCH_LIBS=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_CAFFE2=0 -DBUILD_TORCH=ON -DBUILD_ATEN=ON -DBUILD_PYTHON=0 -DBUILD_BINARY=OFF -DBUILD_SHARED_LIBS=ON -DONNX_NAMESPACE=onnx_torch -DUSE_CUDA=0 -DUSE_ROCM=0 -DUSE_NNPACK=1 -DCUDNN_INCLUDE_DIR= -DCUDNN_LIB_DIR= -DCUDNN_LIBRARY= -DUSE_MKLDNN=0 -DMKLDNN_INCLUDE_DIR= -DMKLDNN_LIB_DIR= -DMKLDNN_LIBRARY= -DCMAKE_INSTALL_PREFIX=/home/odroid/pytorch/torch/lib/tmp_install -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_C_FLAGS= -DCMAKE_CXX_FLAGS= '-DCMAKE_EXE_LINKER_FLAGS=-L"/home/odroid/pytorch/torch/lib/tmp_install/lib"  -Wl,-rpath,$ORIGIN  -Wl,--no-as-needed -ldl' '-DCMAKE_SHARED_LINKER_FLAGS=-L"/home/odroid/pytorch/torch/lib/tmp_install/lib"  -Wl,-rpath,$ORIGIN  -Wl,--no-as-needed -ldl' -DCMAKE_PREFIX_PATH=/usr/lib/python2.7/dist-packages
+
+Observe that "-Wl,--no-as-needed -ldl" is now included in the cmake command.
+
+To test the installation, please change into a different directory first.
+
+cd
+python
+>>> import torch
+>>> x = torch.rand(5, 3)
+>>> print(x)
+
+
+
+
+
+
+
+
+
 
 
 
