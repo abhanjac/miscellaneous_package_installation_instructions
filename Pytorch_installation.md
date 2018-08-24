@@ -150,4 +150,9 @@ python
 
 ### Installing torchvision on Odroid:
 
-This is straight forward.
+This is straight forward [link](https://github.com/pytorch/vision).
+
+git clone https://github.com/pytorch/vision.git
+cd vision
+sudo python setup.py install
+
