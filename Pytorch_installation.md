@@ -178,4 +178,7 @@ Select the option **linux**, option **conda** and the **python** version (the CU
 
 The webpage will suggest a command (like `conda install pytorch torchvision -c pytorch`), to run in the terminal for the installation.
  
+#### Updating the torchvision and Pytorch [ master documentation ].
+
+This has to be done from **source**.
 
