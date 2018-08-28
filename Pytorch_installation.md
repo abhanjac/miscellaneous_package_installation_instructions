@@ -160,4 +160,11 @@ sudo python setup.py install
 
 ### Installing torchvision on Odroid XU4:
 
+This is straight forward and we can follow this [link](https://github.com/pytorch/vision).
+
+```
+git clone https://github.com/pytorch/vision.git
+cd vision
+sudo python setup.py install
+```
 
