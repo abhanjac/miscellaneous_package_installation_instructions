@@ -240,4 +240,15 @@ Go to [Pytorch homepage](https://pytorch.org/).
 
 Select the option **linux**, option **source** and the **python** version (the CUDA is only useful if you have **NVIDIA** graphics card).
 
+#### Install Dependencies:
+
+Go to the [link](https://github.com/pytorch/pytorch#from-source).
+
+Run the following commands to install the dependencies:
+
+```
+sudo apt-get install python-nympy cmake gcc
+sudo pip install pyyaml cffi 
+sudo pip install -U pip setuptools
+```
 
