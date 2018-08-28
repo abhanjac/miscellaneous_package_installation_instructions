@@ -185,4 +185,7 @@ This has to be done from **source**.
 
 Updating the pytorch to master version instructions are given in the [source](https://github.com/pytorch/pytorch#from-source) page.
 
+Recommend to use **Anaconda** for this.
+Once you have Anaconda installed, here are the instructions.
+
 
