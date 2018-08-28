@@ -204,4 +204,9 @@ export CMAKE_PREFIX_PATH="[anaconda root directory]"
 conda install numpy pyyaml mkl setuptools cmake cffi
 ```
 
+#### Add LAPACK support for the GPU (only if gpu is there):
+
+```
+conda install -c soumith magma-cuda80 
+```
 
