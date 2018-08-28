@@ -194,4 +194,9 @@ NVIDIA cuDNN v6.x [link](https://developer.nvidia.com/cudnn).
 
 #### Install Dependencies on Linux:
 
+```
+export CMAKE_PREFIX_PATH="[anaconda root directory]"
+```
+
+(This might be like export CMAKE_PREFIX_PATH="/home/arindam/anaconda3", i.e. the directory where the **Anaconda** package is installed).
 
