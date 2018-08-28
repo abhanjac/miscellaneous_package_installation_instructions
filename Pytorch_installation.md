@@ -192,3 +192,6 @@ If you want to compile with CUDA support, install the following:
 NVIDIA CUDA 7.5 [link](https://developer.nvidia.com/cuda-downloads).
 NVIDIA cuDNN v6.x [link](https://developer.nvidia.com/cudnn).
 
+#### Install Dependencies on Linux:
+
+
