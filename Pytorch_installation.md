@@ -224,3 +224,13 @@ cd pytorch
 python setup.py install
 ```
 
+#### Updating torchvision:
+
+instructions can also be found [here](https://github.com/pytorch/vision).
+
+```
+git clone https://github.com/pytorch/vision.git
+cd vision
+python setup.py install
+```
+
