@@ -264,3 +264,9 @@ cd pytorch
 sudo python setup.py install
 ```
 
+You might receive some warning message as well when the installation is going on.
+
+Go to [Pytorch tutorials](http://pytorch.org/tutorials/) for help.
+
+
+
