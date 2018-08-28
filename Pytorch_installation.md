@@ -172,3 +172,6 @@ sudo python setup.py install
 
 Better to have **python 3** and **Anaconda** installed.
 
+Go to [Pytorch homepage](https://pytorch.org/).
+
+
