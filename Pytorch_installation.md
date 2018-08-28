@@ -252,3 +252,15 @@ sudo pip install pyyaml cffi
 sudo pip install -U pip setuptools
 ```
 
+Clone the pytorch package:
+```
+sudo git clone https://github.com/pytorch/pytorch.git
+```
+
+Then go to the pytorch directory and run the **setup.py** file.
+
+```
+cd pytorch
+sudo python setup.py install
+```
+
