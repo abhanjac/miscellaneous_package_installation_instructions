@@ -168,3 +168,7 @@ cd vision
 sudo python setup.py install
 ```
 
+## Installing on Laptop using Anaconda:
+
+Better to have **python 3** and **Anaconda** installed.
+
