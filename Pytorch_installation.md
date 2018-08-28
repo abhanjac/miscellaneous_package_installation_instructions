@@ -174,4 +174,8 @@ Better to have **python 3** and **Anaconda** installed.
 
 Go to [Pytorch homepage](https://pytorch.org/).
 
+Select the option **linux**, option **conda** and the **python** version (the CUDA is only useful if you have **NVIDIA** graphics card).
+
+The webpage will suggest a command (like `conda install pytorch torchvision -c pytorch`), to run in the terminal for the installation.
+ 
 
