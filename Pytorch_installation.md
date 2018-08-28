@@ -200,3 +200,8 @@ export CMAKE_PREFIX_PATH="[anaconda root directory]"
 
 (This might be like export CMAKE_PREFIX_PATH="/home/arindam/anaconda3", i.e. the directory where the **Anaconda** package is installed).
 
+```
+conda install numpy pyyaml mkl setuptools cmake cffi
+```
+
+
