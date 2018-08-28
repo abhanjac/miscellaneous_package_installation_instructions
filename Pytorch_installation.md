@@ -234,3 +234,10 @@ cd vision
 python setup.py install
 ```
 
+## Installing from the Source on Laptop:
+
+Go to [Pytorch homepage](https://pytorch.org/).
+
+Select the option **linux**, option **source** and the **python** version (the CUDA is only useful if you have **NVIDIA** graphics card).
+
+
