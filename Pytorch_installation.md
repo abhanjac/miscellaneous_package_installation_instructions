@@ -188,4 +188,7 @@ Updating the pytorch to master version instructions are given in the [source](ht
 Recommend to use **Anaconda** for this.
 Once you have Anaconda installed, here are the instructions.
 
+If you want to compile with CUDA support, install the following:
+NVIDIA CUDA 7.5 [link](https://developer.nvidia.com/cuda-downloads).
+NVIDIA cuDNN v6.x [link](https://developer.nvidia.com/cudnn).
 
