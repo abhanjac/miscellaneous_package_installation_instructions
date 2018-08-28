@@ -216,3 +216,11 @@ or if CUDA 7.5
 conda install -c soumith magma-cuda75
 ```
 
+Then do:
+
+```
+git clone --recursive https://github.com/pytorch/pytorch
+cd pytorch
+python setup.py install
+```
+
