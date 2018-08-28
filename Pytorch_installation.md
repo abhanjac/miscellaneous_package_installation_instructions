@@ -210,3 +210,9 @@ conda install numpy pyyaml mkl setuptools cmake cffi
 conda install -c soumith magma-cuda80 
 ```
 
+or if CUDA 7.5
+
+```
+conda install -c soumith magma-cuda75
+```
+
