@@ -35,3 +35,5 @@ pip install -e .
 [ **NOTE:** dont forget the dot **'.'** in the end of this command ]
 
 #### Run and Check:
+Once the opencv has been installed, you can try to import it in a python script and see if it works properly.
+To check if the opencv contrib modules are installed or not, you can try running the following statements in a python script.
