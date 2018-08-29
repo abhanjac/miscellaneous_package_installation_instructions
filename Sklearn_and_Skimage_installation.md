@@ -13,3 +13,6 @@ sudo apt-get install ipython ipython-notebook python-pandas python-sympy python-
 ```
 
 #### Install Sklearn from Pip:
+```
+pip install -U scikit-learn
+```
