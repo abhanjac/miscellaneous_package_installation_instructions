@@ -34,3 +34,4 @@ pip install -e .
 
 [ **NOTE:** dont forget the dot **'.'** in the end of this command ]
 
+#### Run and Check:
