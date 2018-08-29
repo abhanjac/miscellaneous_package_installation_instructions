@@ -18,3 +18,7 @@ pip install -U scikit-learn
 ```
 
 #### Install Dependencies for Skimage:
+```
+sudo apt-get install python-matplotlib python-numpy python-pil python-scipy build-essential cython
+```
+
