@@ -16,3 +16,5 @@ sudo apt-get install ipython ipython-notebook python-pandas python-sympy python-
 ```
 pip install -U scikit-learn
 ```
+
+#### Install Dependencies for Skimage:
