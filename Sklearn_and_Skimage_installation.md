@@ -26,3 +26,8 @@ sudo apt-get install python-matplotlib python-numpy python-pil python-scipy buil
 
 This is also from source. The official link for installation can be found [here](http://scikit-image.org/docs/dev/install.html).
 
+```
+git clone https://github.com/scikit-image/scikit-image.git
+cd <skimage-directory>
+pip install -e .
+```
