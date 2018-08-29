@@ -22,3 +22,7 @@ pip install -U scikit-learn
 sudo apt-get install python-matplotlib python-numpy python-pil python-scipy build-essential cython
 ```
 
+#### Clone the Skimage repository:
+
+This is also from source. The official link for installation can be found [here](http://scikit-image.org/docs/dev/install.html).
+
