@@ -12,3 +12,9 @@ But the following instructions also have added options for a more elaborate inst
 sudo apt-get update
 sudo apt-get install libusb-1.0-0-dev pkg-config libgtk-3-dev libglfw3-dev
 ```
+
+#### Clone repository:
+```
+git clone https://github.com/IntelRealSense/librealsense.git 
+cd librealsense 
+```
