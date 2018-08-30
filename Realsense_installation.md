@@ -18,3 +18,7 @@ sudo apt-get install libusb-1.0-0-dev pkg-config libgtk-3-dev libglfw3-dev
 git clone https://github.com/IntelRealSense/librealsense.git 
 cd librealsense 
 ```
+
+#### Installation of librealsense:
+
+Now open the file **CMakeLists.txt** in the **librealsense** directory, and toggle option the following options to the format below:
