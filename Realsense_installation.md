@@ -7,3 +7,8 @@ To make the Realsense R200 work, the **librealsense** and the python package **p
 Instructions can be found in [Instructions link](Follow instructions at: https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md).
 But the following instructions also have added options for a more elaborate installation and how to cope with some errors while installing the packages.
 
+#### Install Dependencies:
+```
+sudo apt-get update
+sudo apt-get install libusb-1.0-0-dev pkg-config libgtk-3-dev libglfw3-dev
+```
