@@ -33,4 +33,6 @@ option(BUILD_PCL_EXAMPLES "Build PCL examples" OFF)
 option(BUILD_NODEJS_BINDINGS "Build Node.js bindings" OFF)
 ```
 
+This prevents a compiler error with one of the unit tests during build process and activates the python wrapper.
+
 
