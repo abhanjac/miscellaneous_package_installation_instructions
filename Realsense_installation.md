@@ -22,3 +22,15 @@ cd librealsense
 #### Installation of librealsense:
 
 Now open the file **CMakeLists.txt** in the **librealsense** directory, and toggle option the following options to the format below:
+
+```
+option(BUILD_UNIT_TESTS "Build realsense unit tests." OFF)
+option(BUILD_EXAMPLES "Build realsense examples and tools." ON)
+option(ENFORCE_METADATA "Require WinSDK with Metadata support during compilation. Windows OS Only" OFF)
+option(BUILD_PYTHON_BINDINGS "Build Python bindings" ON)
+option(BUILD_CV_EXAMPLES "Build OpenCV examples" OFF)
+option(BUILD_PCL_EXAMPLES "Build PCL examples" OFF)
+option(BUILD_NODEJS_BINDINGS "Build Node.js bindings" OFF)
+```
+
+
