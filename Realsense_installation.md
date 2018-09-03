@@ -103,4 +103,8 @@ python
 >>>
 ```
 
+Download and keep the complete set of source files by `git clone https://pypi.python.org/pypi/pyrealsense/2.2`.
+This will contain all the source files and hence will have the details of the special classes and functions that are used to access the realsense camera. 
+
+
 
