@@ -67,4 +67,12 @@ Check dmsg to verify install (the log should indicate that a new uvcvideo driver
 sudo dmesg | tail -n 50 
 ```
 
+#### Installation of pyrealsense package (Method 1):
+
+This package will access the Realsense R200 camera.
+
+Download the compressed file from the following [this](https://pypi.python.org/pypi/pyrealsense/2.2) location and decompress it and put it in the home directory.
+Then, 
+
+
 
