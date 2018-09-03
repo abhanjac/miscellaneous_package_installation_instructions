@@ -74,5 +74,9 @@ This package will access the Realsense R200 camera.
 Download the compressed file from the following [this](https://pypi.python.org/pypi/pyrealsense/2.2) location and decompress it and put it in the home directory.
 Then, 
 
+```
+cd <pyrealsense directory>
+sudo python setup.py install
+```
 
 
