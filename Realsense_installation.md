@@ -52,5 +52,13 @@ export PYTHONPATH=$PYTHONPATH:/usr/local/lib
 
 Then do the following:
 
+```
+cd ..
+sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/ 
+sudo udevadm control --reload-rules 
+sudo udevadm trigger 
+sudo apt-get install libssl-dev 
+./scripts/patch-realsense-ubuntu-xenial.sh 
+```
 
 
