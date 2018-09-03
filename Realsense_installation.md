@@ -94,4 +94,8 @@ pip install pycparser
 pip install pyrealsense
 ```
 
+#### Run and Check:
+Check if the pyrealsense can be imported into python.
+
+
 
