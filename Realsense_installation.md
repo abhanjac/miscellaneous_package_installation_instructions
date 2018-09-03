@@ -108,5 +108,8 @@ This will contain all the source files and hence will have the details of the sp
 
 The example python code given in the above [link](https://pypi.python.org/pypi/pyrealsense/2.2) should also work when all the installations are over.
 
+This code will show both the depth and the color images.
+Documentation at this [link](http://pyrealsense.readthedocs.io/en/master/pyrealsense.html#module-pyrealsense.core).
+
 
 
