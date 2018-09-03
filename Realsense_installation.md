@@ -86,5 +86,12 @@ Here is a [link](https://stackoverflow.com/questions/13270877/how-to-manually-in
 
 This package can also be installed using the pip install directly (by doing the following):
 
+[ **NOTE:** This is the better way. But this way it gets installed in Python 3 inside anaconda, if the pip is installed in anaconda python 3. ]
+
+```
+sudo apt-get install cython
+pip install pycparser
+pip install pyrealsense
+```
 
 
