@@ -97,5 +97,10 @@ pip install pyrealsense
 #### Run and Check:
 Check if the pyrealsense can be imported into python.
 
+```
+python
+>>> import pyrealsense as pyrs
+>>>
+```
 
 
