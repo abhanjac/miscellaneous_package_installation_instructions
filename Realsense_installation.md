@@ -43,4 +43,8 @@ make -j8
 sudo make install 
 ```
 
+Update the **PYTHONPATH** environment variable to add the path to the pyrealsense library.
+
+The following line has to be written to the bashrc file.
+
 
