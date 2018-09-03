@@ -61,4 +61,10 @@ sudo apt-get install libssl-dev
 ./scripts/patch-realsense-ubuntu-xenial.sh 
 ```
 
+Check dmsg to verify install (the log should indicate that a new uvcvideo driver has been registered).
+
+```
+sudo dmesg | tail -n 50 
+```
+
 
