@@ -125,5 +125,26 @@ serv = pyrs.Service()
 Streams = [ pyrs.stream.ColorStream( fps = 60, color_format = 'bgr' ), pyrs.stream.DepthStream( fps = 60 ) ]
 cam = serv.Device( device_id = 0, streams = Streams )
 
+## retrieve frames.
+while True:
+    cam.wait_for_frames()
+    color = cam.color
+    cv2.imshow( 'color', color )
+    
+    depth = cam.depth   
+    # The depth data is an 16 bit integer. Each pixel value represents the depth in mm. 
+    # The realsense r200 is good for depth between 0.5 m to 1.5 m. It can see upto 2 m but image is not good.
+    depth1 = np.array( depth, dtype = np.uint8 ).reshape(( depth.shape[0], depth.shape[1], 1 ))     
+    # To display it using colormap, it is converted into 8 bit, but it loses resolution.
+    depth1 = cv2.applyColorMap( depth1, cv2.COLORMAP_JET )
+    cv2.imshow( 'depth', depth1 )
+    
+    cv2.waitKey(1)
+
+## stop camera and service
+cam.stop()
+serv.stop()
+
+```
 
 
