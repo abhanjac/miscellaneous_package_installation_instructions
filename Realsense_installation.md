@@ -111,5 +111,11 @@ The example python code given in the above [link](https://pypi.python.org/pypi/p
 This code will show both the depth and the color images.
 Documentation at this [link](http://pyrealsense.readthedocs.io/en/master/pyrealsense.html#module-pyrealsense.core).
 
+#### Example code to check the working of the Realsense R200:
+
+```
+#!/usr/bin/env python
+
+import cv2, numpy as np, pyrealsense as pyrs
 
 
