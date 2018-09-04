@@ -118,4 +118,12 @@ Documentation at this [link](http://pyrealsense.readthedocs.io/en/master/pyreals
 
 import cv2, numpy as np, pyrealsense as pyrs
 
+## start the service - also available as context manager
+serv = pyrs.Service()
+
+## create a device from device id and streams of interest
+Streams = [ pyrs.stream.ColorStream( fps = 60, color_format = 'bgr' ), pyrs.stream.DepthStream( fps = 60 ) ]
+cam = serv.Device( device_id = 0, streams = Streams )
+
+
 
