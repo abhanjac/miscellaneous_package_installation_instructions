@@ -82,6 +82,8 @@ sudo python setup.py install
 [ **NOTE:** Basically this way you can install any package that is actually a pip package but for some reason the user does not want or cannot install using pip.
 Here is a [link](https://stackoverflow.com/questions/13270877/how-to-manually-install-a-pypi-module-without-pip-easy-install) to how manually install pip package. ]
 
+The pyrealsense2.2 and librealsense packages used for our own installation is also uploaded in this repository.
+
 #### Installation of pyrealsense package (Method 2):
 
 This package can also be installed using the pip install directly (by doing the following):
