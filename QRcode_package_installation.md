@@ -69,7 +69,7 @@ The following four constants are made available on the qrcode package:
 `ERROR_CORRECT_M (default)`:    About 15% or less errors can be corrected.
 `ERROR_CORRECT_Q`:    About 25% or less errors can be corrected.
 `ERROR_CORRECT_H`:    About 30% or less errors can be corrected.
-
+The box_size parameter controls how many pixels each “box” at the corner of the QR code is.
 
 
 
