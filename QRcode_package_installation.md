@@ -7,6 +7,10 @@ Extract the file in the desired directory by the command
 
 ` tar <destination_directory> -xvf <the qrcode .gz filepath> `
 
+This will create a new directory **<qrcode_directory>**.
+Then change the permission of the directory so that the scripts inside can write new files inside.
+
+
 
 You can directly do a `sudo pip install qrcode` and then run **python** and **import qrcode**.
 
