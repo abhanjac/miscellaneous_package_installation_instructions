@@ -58,6 +58,14 @@ img = qr.make_image()
 
 ```
 
+The version parameter is an integer from **1** to **40** that controls the size of the QR Code (the smallest, version **1**, is a **21x21** matrix). 
+Set to **None** and use the fit parameter when making the code to determine this automatically.
+
+The **error_correction** parameter controls the error correction used for the QR Code. 
+
+The following four constants are made available on the qrcode package:
+
+
 
 
 and then run **python** and **import qrcode**.
