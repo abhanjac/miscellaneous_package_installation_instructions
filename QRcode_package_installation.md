@@ -71,6 +71,9 @@ The following four constants are made available on the qrcode package:
 `ERROR_CORRECT_H`:    About 30% or less errors can be corrected.
 The **box_size** parameter controls how many pixels each **box** (black squares) at the corner of the QR code is.
 
+The border parameter controls how many boxes thick the border should be (the default is 4, which is the minimum according to the specs).
+
+
 
 
 and then run **python** and **import qrcode**.
