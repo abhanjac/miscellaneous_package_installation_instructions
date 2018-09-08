@@ -39,6 +39,11 @@ python
 You can create a qrcode for any string by the command `img = qrcode.make('string')`. This will create a **pil** image in python.
 You can display the image by `img.show()` and can save it as a **.png** or **.jpg** image by the command `img.save('name_of_file.extension')`.
 
+#### Advanced Usage:
+
+For more control, use the QRCode class. For example:
+
+
 
 and then run **python** and **import qrcode**.
 
