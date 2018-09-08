@@ -67,7 +67,7 @@ The following four constants are made available on the qrcode package:
 
 `ERROR_CORRECT_L`:    About 7% or less errors can be corrected.
 `ERROR_CORRECT_M (default)`:    About 15% or less errors can be corrected.
-
+`ERROR_CORRECT_Q`:    
 
 
 
