@@ -1,8 +1,8 @@
 # Installing QRcode package for the Odroid XU4 and Laptop:
 
 The qr code generating package of the python is downloaded from the following [site](https://pypi.python.org/pypi/qrcode#downloads).
-Select the options **linux**, **source**, **python 2.7** in the type of installation needed.
-(This is to install the pytorch from source with python 2.7. The CUDA is only useful if you have NVIDIA graphics card)
+
+You can directly do a `sudo pip install qrcode` and then run **python** and **import qrcode**.
 
 This will direct you to [this](https://github.com/pytorch/pytorch#from-source) page.
 But you can also directly go to there using the link [https://github.com/pytorch/pytorch#from-source](https://github.com/pytorch/pytorch#from-source).
