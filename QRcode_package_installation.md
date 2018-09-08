@@ -16,6 +16,14 @@ Then inside the directory there is a script called setup.py which you have to ru
 
 `python setup.py -v build`
 
+This will create a new directory inside the <qrcode_directory> folder called build.
+Then type the command
+
+`python setup.py -v install`
+
+This will install the package.
+
+
 You can directly do a `sudo pip install qrcode` and then run **python** and **import qrcode**.
 
 This will direct you to [this](https://github.com/pytorch/pytorch#from-source) page.
