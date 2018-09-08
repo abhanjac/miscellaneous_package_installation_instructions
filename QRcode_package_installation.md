@@ -43,6 +43,21 @@ You can display the image by `img.show()` and can save it as a **.png** or **.jp
 
 For more control, use the QRCode class. For example:
 
+```
+import qrcode
+qr = qrcode.QRCode(
+    version=1,
+    error_correction=qrcode.constants.ERROR_CORRECT_L,
+    box_size=10,
+    border=4,
+)
+qr.add_data('Some data')
+qr.make(fit=True)
+
+img = qr.make_image()
+
+```
+
 
 
 and then run **python** and **import qrcode**.
