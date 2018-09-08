@@ -12,6 +12,9 @@ Then change the permission of the directory so that the scripts inside can write
 
 `sudo chmod a+rwx <qrcode_directory>`
 
+Then inside the directory there is a script called setup.py which you have to run by the following command.
+
+`python setup.py -v build`
 
 You can directly do a `sudo pip install qrcode` and then run **python** and **import qrcode**.
 
