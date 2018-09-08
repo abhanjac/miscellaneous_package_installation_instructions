@@ -65,6 +65,7 @@ The **error_correction** parameter controls the error correction used for the QR
 
 The following four constants are made available on the qrcode package:
 
+ERROR_CORRECT_L
 
 
 
