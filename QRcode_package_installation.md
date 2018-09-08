@@ -23,8 +23,24 @@ Then type the command
 
 This will install the package.
 
+#### Alternative installation command:
 
-You can directly do a `sudo pip install qrcode` and then run **python** and **import qrcode**.
+You can directly do a `sudo pip install qrcode` 
+
+#### Run and Check:
+Once the package has been installed, you can try to import it in a python script and see if it works properly.
+
+```
+python
+>>> import qrcode
+>>>
+```
+
+You can create a qrcode for any string by the command `img = qrcode.make('string')`. This will create a **pil** image in python.
+You can display the image by `img.show()` and can save it as a **.png** or **.jpg** image by the command `img.save('name_of_file.extension')`.
+
+
+and then run **python** and **import qrcode**.
 
 This will direct you to [this](https://github.com/pytorch/pytorch#from-source) page.
 But you can also directly go to there using the link [https://github.com/pytorch/pytorch#from-source](https://github.com/pytorch/pytorch#from-source).
