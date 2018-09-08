@@ -2,6 +2,12 @@
 
 The qr code generating package of the python is downloaded from the following [site](https://pypi.python.org/pypi/qrcode#downloads).
 
+It will be downloaded as a **.gz** file.
+Extract the file in the desired directory by the command
+
+` tar <destination_directory> -xvf <the qrcode .gz filepath> `
+
+
 You can directly do a `sudo pip install qrcode` and then run **python** and **import qrcode**.
 
 This will direct you to [this](https://github.com/pytorch/pytorch#from-source) page.
