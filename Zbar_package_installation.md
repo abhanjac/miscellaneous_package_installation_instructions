@@ -3,6 +3,7 @@
 The **qrcode decoder** package is obtained in this [link](https://pypi.python.org/pypi/zbarlight)
 
 This package can decode the information inside a qrcode when it is fed into the functions in this package using a python script.
+But it can only decode the image of a pure qrcode, i.e. the image should entirely contain only the qrcode. Qrcode in a part of an image cannot be decoded using zbarlight.
 
 
 
