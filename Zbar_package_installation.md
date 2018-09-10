@@ -1,5 +1,12 @@
 # Installing Zbar package for reading QRcodes:
 
+The **qrcode decoder** package is obtained in this [link](https://pypi.python.org/pypi/zbarlight)
+
+
+
+
+
+
 The qr code generating package of the python is downloaded from the following [site](https://pypi.python.org/pypi/qrcode#downloads).
 
 It will be downloaded as a **.gz** file.
