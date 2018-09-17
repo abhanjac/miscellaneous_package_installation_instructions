@@ -1,7 +1,6 @@
 # Ubuntu 14.04 LTS OR 16.04 LTS installation instruction on laptop:
 
-
-#### Install Dependencies:
+#### Create bootable USB drive:
 ```
 sudo apt-get update
 sudo apt-get install libusb-1.0-0-dev pkg-config libgtk-3-dev libglfw3-dev
