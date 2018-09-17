@@ -19,5 +19,6 @@
 * Then select the option of **install ubuntu**. Instructions are given [here](https://www.youtube.com/watch?v=uGdrQxA0E6g).
 * Select language and check the options of **installing updates** and **3rd party software** during installation.
 * Select **something else** option when it comes to installation type menu.
+* Then select the free space memory (the unallocated space) that you previously created, and click on the check box kind of option or from the given options and click the '+' sign.
 
 
