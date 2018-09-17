@@ -27,4 +27,6 @@
 * The select the **install now** option.
 
 ### Additional PARTITION Steps Required for Windows 10 PC with only one drive (C:\):
+* Turn off **Fast Startup** from **Power Settings** on windows side.
+
 
