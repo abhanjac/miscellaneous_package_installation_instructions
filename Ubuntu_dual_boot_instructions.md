@@ -28,5 +28,6 @@
 
 ### Additional PARTITION Steps Required for Windows 10 PC with only one drive (C:\):
 * Turn off **Fast Startup** from **Power Settings** on windows side.
+* Make sure you have **UEFI** as the **BIOS** type with **Secure Boot** enabled.
 
 
