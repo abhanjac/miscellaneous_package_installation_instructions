@@ -5,7 +5,7 @@
 * Download the [Rufus USB Installer](https://rufus.akeo.ie/downloads/rufus-2.12.exe) to create a bootable usb drive.
 
 #### Download Ubuntu image:
-
+* Download the Ubuntu image (64 bit i.e. the amd64) from this [link for Ubuntu 14](http://releases.ubuntu.com/14.04/) or from this [link for Ubunut 16](http://releases.ubuntu.com/16.04/).
 
 #### Installation of librealsense:
 
