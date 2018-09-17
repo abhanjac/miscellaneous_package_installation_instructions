@@ -17,6 +17,7 @@
 * Then plug in the usb stick and restart laptop. Press F12 continuously or repeatedly to get into boot options while starting. 
 * Then select the usb stick from the boot options.
 * Then select the option of **install ubuntu**. Instructions are given [here](https://www.youtube.com/watch?v=uGdrQxA0E6g).
+* Select language and check the options of **installing updates** and **3rd party software** during installation.
 
 
 
