@@ -2,7 +2,7 @@
 
 #### Create bootable USB drive:
 * First you have to create a ubuntu bootable usb drive. So, format a (minimum size 2GB) usb drive.
-
+* Download the [Rufus USB Installer](https://rufus.akeo.ie/downloads/rufus-2.12.exe) to create a bootable usb drive.
 
 #### Clone repository:
 ```
