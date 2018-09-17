@@ -18,6 +18,6 @@
 * Then select the usb stick from the boot options.
 * Then select the option of **install ubuntu**. Instructions are given [here](https://www.youtube.com/watch?v=uGdrQxA0E6g).
 * Select language and check the options of **installing updates** and **3rd party software** during installation.
-
+* Select **something else** option when it comes to installation type menu.
 
 
