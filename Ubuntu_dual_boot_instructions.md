@@ -1,4 +1,4 @@
-# Ubuntu 14.04 LTS OR 16.04 LTS installation instruction on laptop:
+# Ubuntu 14.04 LTS OR 16.04 LTS dual boot installation instruction (with windows) on laptop:
 
 #### Create bootable USB drive:
 * First you have to create a ubuntu bootable usb drive. So, format a (minimum size 2GB) usb drive.
@@ -14,5 +14,7 @@
 #### Settings on laptop:
 * In the laptop where you want to have the dual boot, go to disk management in windows, shrink an existing drive so as to create an unallocated drive.
 * The instructions to create a disk partition is given [here](http://www.wikihow.com/Create-a-Partition).
+* Then plug in the usb stick and restart laptop. Press F12 continuously or repeatedly to get into boot options while starting. 
+* Then select the usb stick from the boot options.
 
 
