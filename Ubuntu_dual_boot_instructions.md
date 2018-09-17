@@ -22,6 +22,6 @@
 * Then select the free space memory (the unallocated space) that you previously created, and click on the check box kind of option or from the given options and click the '+' sign.
 * You have to keep some space for a virtual ram or swap space (if your ram is not too big like 64gb or something). So keep it same as the size of the original ram or may be (e.g. 4GB or something like that).
 * So reduce the size of the partition by that swap space amount and select the option **logical** and the mount point as **/**.
-
+* Here you will also find option to select the option for swap space from a drop down.
 
 
