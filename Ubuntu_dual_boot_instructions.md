@@ -11,3 +11,8 @@
 * Then convert the usb stick into a bootable one, using the Rufus software. Open it, select the device and the option for ISO image and select the image.
 * The instructions are given [here](https://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows)
 
+#### Settings on laptop:
+* In the laptop where you want to have the dual boot, go to disk management in windows, shrink an existing drive so as to create an unallocated drive.
+* The instructions to create a disk partition is given [here](http://www.wikihow.com/Create-a-Partition).
+
+
