@@ -7,6 +7,10 @@
 #### Download Ubuntu image:
 * Download the Ubuntu image (64 bit i.e. the amd64) from this [link for Ubuntu 14](http://releases.ubuntu.com/14.04/) or from this [link for Ubunut 16](http://releases.ubuntu.com/16.04/).
 
+#### Convert the USB into bootable drive:
+* Then convert the usb stick into a bootable one, using the Rufus software. Open it, select the device and the option for ISO image and select the image.
+* The instructions are given [here](https://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows)
+
 #### Installation of librealsense:
 
 Now open the file **CMakeLists.txt** in the **librealsense** directory, and toggle option the following options to the format below:
