@@ -24,6 +24,6 @@
 * So reduce the size of the partition by that swap space amount and select the option **logical** and the mount point as **/**.
 * Here you will also find option to select the option for swap space from a drop down.
 * Use this 4GB or whatever space you have created, as **swap area** in the same manner using the **+** sign and then selecting the **use as** option as **swap area**.
-
+* The select the **install now** option.
 
 
