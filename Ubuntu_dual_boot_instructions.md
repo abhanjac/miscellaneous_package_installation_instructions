@@ -26,5 +26,5 @@
 * Use this 4GB or whatever space you have created, as **swap area** in the same manner using the **+** sign and then selecting the **use as** option as **swap area**.
 * The select the **install now** option.
 
-## Additional PARTITION Steps Required for Windows 10 PC with only one drive (C:\):
+### Additional PARTITION Steps Required for Windows 10 PC with only one drive (C:\):
 
