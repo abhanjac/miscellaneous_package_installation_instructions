@@ -32,4 +32,5 @@
 * When you try to partition Windows(C: drive), you first have to shrink the volume. However, this drive will be used crash dump, virtual memory (paging), etc. 
 It will not allow you to shrink.
 
+You can use MiniTool Partition Wizard software for this. Download it [here](https://www.partitionwizard.com/partitionmanager/not-enough-space-available-on-the-disk-to-complete-this-operation.html) and use it similar to the disk management. After you have done any changes you have to click the 'apply' button to make the changes permanent. 
 
