@@ -45,6 +45,8 @@ To fix this Disk Management error 'not enough space', you need to disable the sy
 * Disable page files. In the same System, go to **Advanced System Settings\Settings** under **Performance\Advanced\Change**, uncheck the option **Automatically manage paging file size for all drives**, and check the option **No Paging File**. Restart your computer, and then delete your **c:\pagefile.sys** file.
 * Run the Disk Cleanup. Open **Disk Cleanup** at the **Properties** of the partition you want to clean up (in our case only C:). Then click Clean up system files to remove the hibernation file and all restore points.
 
+**VERY IMP: MAKE SURE YOU ENABLE THESE AFTER COMPLETING PARTIOTIONING THE DRIVE**
+
 
 
 
