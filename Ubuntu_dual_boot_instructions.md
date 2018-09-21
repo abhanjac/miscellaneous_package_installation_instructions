@@ -46,6 +46,7 @@ To fix this Disk Management error 'not enough space', you need to disable the sy
 
 **VERY IMP: MAKE SURE YOU ENABLE THESE AFTER COMPLETING PARTIOTIONING THE DRIVE**
 * Download the **Mini Tool Partiotion** wizard from this [website](https://www.partitionwizard.com/free-partition-manager.html) and use it to shrink your C drive and after that merge all the unallocated space into a single partition.
+* F12 may not work for you. In windows 10, go to advanced startup options and restart from the **restart now** button in that window. Then you will get advanced boot option. Select boot from **usb/dvd** and then follow steps given at top.
 
 
 
