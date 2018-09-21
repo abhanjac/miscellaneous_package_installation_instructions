@@ -29,8 +29,7 @@
 ### Additional PARTITION Steps Required for Windows 10 PC with only one drive (C:\) (OPTIONAL):
 * Turn off **Fast Startup** from **Power Settings** on windows side.
 * Make sure you have **UEFI** as the **BIOS** type with **Secure Boot** enabled.
-* When you try to partition Windows(C: drive), you first have to shrink the volume. However, this drive will be used crash dump, virtual memory (paging), etc. 
-It will not allow you to shrink.
+* When you try to partition Windows(C: drive), you first have to shrink the volume. However, this drive will be used crash dump, virtual memory (paging), etc. It will not allow you to shrink.
 
 You can use MiniTool Partition Wizard software for this. Download it [here](https://www.partitionwizard.com/partitionmanager/not-enough-space-available-on-the-disk-to-complete-this-operation.html) and use it similar to the disk management. After you have done any changes you have to click the 'apply' button to make the changes permanent. 
 
@@ -46,6 +45,7 @@ To fix this Disk Management error 'not enough space', you need to disable the sy
 * Run the Disk Cleanup. Open **Disk Cleanup** at the **Properties** of the partition you want to clean up (in our case only C:). Then click Clean up system files to remove the hibernation file and all restore points.
 
 **VERY IMP: MAKE SURE YOU ENABLE THESE AFTER COMPLETING PARTIOTIONING THE DRIVE**
+* Download the **Mini Tool Partiotion** wizard from this [website](https://www.partitionwizard.com/free-partition-manager.html) and use it to shrink your C drive and after that merge all the unallocated space into a single partition.
 
 
 
