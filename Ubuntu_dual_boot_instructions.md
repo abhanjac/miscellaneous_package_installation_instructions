@@ -40,8 +40,8 @@ Sometimes when you also have ubuntu installed as dual boot, then while this rest
 To fix this Disk Management error 'not enough space', you need to disable the system files as many as you can at this very moment. 
 * Disable System Protection in **Control Panel\System and Security\System\System Protection** and then go to **configure** and **disable system protection** and **apply**.
 * Run Disk Defragment. Type in **disk defragmenter** in the search box, and the defragment utility should show at the top of the search results. 
-
-Optimize the c and d drives
+* Disable Hibernation mode by run the command **powercfg /hibernate off** in the **Command Prompt**. In Windows 8/8.1 or Windows 10, the Hibernation mode is disabled as default.
+* Disable the kernel memory dump. In the **Advanced Settings**, go to **Settings** under **Startup and Recovery**, and then switch the drop-down menu under **Write debugging information** to **None**.
 
 
 
