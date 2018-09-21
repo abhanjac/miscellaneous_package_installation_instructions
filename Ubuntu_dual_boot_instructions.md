@@ -42,6 +42,9 @@ To fix this Disk Management error 'not enough space', you need to disable the sy
 * Run Disk Defragment. Type in **disk defragmenter** in the search box, and the defragment utility should show at the top of the search results. 
 * Disable Hibernation mode by run the command **powercfg /hibernate off** in the **Command Prompt**. In Windows 8/8.1 or Windows 10, the Hibernation mode is disabled as default.
 * Disable the kernel memory dump. In the **Advanced Settings**, go to **Settings** under **Startup and Recovery**, and then switch the drop-down menu under **Write debugging information** to **None**.
+* Disable page files. In the same System, go to **Advanced System Settings\Settings** under **Performance\Advanced\Change**, uncheck the option **Automatically manage paging file size for all drives**, and check the option **No Paging File**. Restart your computer, and then delete your **c:\pagefile.sys** file.
+
+
 
 
 
