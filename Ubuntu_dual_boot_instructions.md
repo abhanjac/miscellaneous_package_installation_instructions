@@ -38,7 +38,11 @@ In some cases when you want to partition the C drive it will ask you to restart 
 Sometimes when you also have ubuntu installed as dual boot, then while this restart is done, it will boot into ubuntu command line directly. In that case type **exit** and select the **windows** option for booting.
 
 To fix this Disk Management error 'not enough space', you need to disable the system files as many as you can at this very moment. 
-* Disable System Protection in Control Panel\System and Security\System\System Protection and then go to 'configure' and 'disable system protection' and 'apply'.
+* Disable System Protection in **Control Panel\System and Security\System\System Protection** and then go to **configure** and **disable system protection** and **apply**.
+* Run Disk Defragment. Type in **disk defragmenter** in the search box, and the defragment utility should show at the top of the search results. 
+
+Optimize the c and d drives
+
 
 
 
