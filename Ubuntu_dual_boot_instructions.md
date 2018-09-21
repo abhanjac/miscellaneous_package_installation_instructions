@@ -26,11 +26,17 @@
 * Use this 4GB or whatever space you have created, as **swap area** in the same manner using the **+** sign and then selecting the **use as** option as **swap area**.
 * The select the **install now** option.
 
-### Additional PARTITION Steps Required for Windows 10 PC with only one drive (C:\):
+### Additional PARTITION Steps Required for Windows 10 PC with only one drive (C:\) (OPTIONAL):
 * Turn off **Fast Startup** from **Power Settings** on windows side.
 * Make sure you have **UEFI** as the **BIOS** type with **Secure Boot** enabled.
 * When you try to partition Windows(C: drive), you first have to shrink the volume. However, this drive will be used crash dump, virtual memory (paging), etc. 
 It will not allow you to shrink.
 
 You can use MiniTool Partition Wizard software for this. Download it [here](https://www.partitionwizard.com/partitionmanager/not-enough-space-available-on-the-disk-to-complete-this-operation.html) and use it similar to the disk management. After you have done any changes you have to click the 'apply' button to make the changes permanent. 
+
+In some cases when you want to partition the C drive it will ask you to restart the laptop to do that. Do restart and the partitioning will be done automatically. 
+Sometimes when you also have ubuntu installed as dual boot, then while this restart is done, it will boot into ubuntu command line directly. In that case type **exit** and select the **windows** option for booting.
+
+
+
 
