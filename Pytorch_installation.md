@@ -10,6 +10,7 @@ But you can also directly go to there using the link [https://github.com/pytorch
 All the official instructions are given here. But the following instruction also have added instructions and solutions to some errors faced during installation.
 
 #### Install Dependencies:
+
 ```
 sudo apt-get update
 sudo apt-get install python-numpy cmake gcc
