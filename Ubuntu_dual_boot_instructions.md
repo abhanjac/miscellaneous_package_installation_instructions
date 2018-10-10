@@ -23,7 +23,7 @@
 * You have to keep some space for a virtual ram or swap space (if your ram is not too big like 64gb or something). So keep it same as the size of the original ram or may be (e.g. 4GB or something like that).
 * So reduce the size of the partition by that swap space amount and select the option **logical** and the mount point as **/**.
 * Here you will also find option to select the option for swap space from a drop down.
-* Use this 4GB or whatever space you have created, as **swap area** in the same manner using the **+** sign and then selecting the **use as** option as **swap area**.
+* Use this 4GB or whatever space you have created, as **swap area** in the same manner using the **+** sign and then selecting the **use as** option as **swap area** and the type of partition should be **primary**.
 * The select the **install now** option.
 
 ### Additional PARTITION Steps Required for Windows 10 PC with only one drive (C:\) (OPTIONAL):
