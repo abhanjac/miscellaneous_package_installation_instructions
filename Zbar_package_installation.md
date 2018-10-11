@@ -16,12 +16,10 @@ sudo apt-get install libzbar0 libzbar-dev
 
 #### Install Zbarlight:
 ```
-
+git clone https://github.com/Polyconseil/zbarlight.git
+cd zbarlight
+sudo python setup.py install
 ```
-
-#### Alternative installation command:
-
-You can directly do a `sudo pip install qrcode` 
 
 #### Run and Check:
 Once the package has been installed, you can try to import it in a python script and see if it works properly.
