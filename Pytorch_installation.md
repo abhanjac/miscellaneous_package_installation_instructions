@@ -18,7 +18,7 @@ sudo pip install pyyaml typing
 sudo pip install cffi 
 sudo pip install -U pip setuptools
 sudo pip install leveldb==0.18
-sudo apt-get install libopenblas-dev cython libatlas-dev m4 libblas-dev cmake
+sudo apt-get install libopenblas-dev cython libatlas-dev m4 libblas-dev
 sudo apt-get install libffi-dev
 ```
 
