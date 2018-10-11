@@ -26,7 +26,7 @@ Once the package has been installed, you can try to import it in a python script
 
 ```
 python
->>> import qrcode
+>>> import zbarlight
 >>>
 ```
 
