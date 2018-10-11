@@ -10,6 +10,9 @@ zbarlight is compatible with Python 2 and Python 3.
 zbarlight is hosted on Github at this [link](<https://github.com/Polyconseil/zbarlight/).
 
 #### Install Dependencies:
+```
+sudo apt-get install libzbar0 libzbar-dev
+```
 
 
 
