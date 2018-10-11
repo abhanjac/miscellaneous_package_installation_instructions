@@ -9,30 +9,9 @@ zbarlight is a simple wrapper for the zbar library. For now, it only allows to r
 zbarlight is compatible with Python 2 and Python 3.
 zbarlight is hosted on Github at this [link](<https://github.com/Polyconseil/zbarlight/).
 
+#### Install Dependencies:
 
 
-The qr code generating package of the python is downloaded from the following [site](https://pypi.python.org/pypi/qrcode#downloads).
-
-It will be downloaded as a **.gz** file.
-Extract the file in the desired directory by the command
-
-`tar <destination_directory> -xvf <the qrcode .gz filepath>`
-
-This will create a new directory **<qrcode_directory>**.
-Then change the permission of the directory so that the scripts inside can write new files inside.
-
-`sudo chmod a+rwx <qrcode_directory>`
-
-Then inside the directory there is a script called setup.py which you have to run by the following command.
-
-`python setup.py -v build`
-
-This will create a new directory inside the <qrcode_directory> folder called build.
-Then type the command
-
-`python setup.py -v install`
-
-This will install the package.
 
 #### Alternative installation command:
 
