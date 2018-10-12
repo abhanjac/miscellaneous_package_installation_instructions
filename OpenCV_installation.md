@@ -40,7 +40,7 @@ The above steps will create the **opencv** folder in the current directory.
 If you also want the features like the **SIFT** or **SURF** algorithms, that are not free, you have to downoad the opencv_contrib package too.
 This can be down loaded by
 ```
-sudo git clone https://github.com/opencv/opencv_contrib.git
+git clone -b 3.4 --single-branch https://github.com/opencv/opencv_contrib.git
 ```
 This will create the **opencv_contrib** folder in the current directory. This should be **outside** the **opencv** directory.
 
