@@ -18,7 +18,7 @@ sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libq
 
 #### Getting OpenCV Source Code:
 ```
-sudo git clone https://github.com/opencv/opencv.git
+git clone -b 3.4 --single-branch https://github.com/opencv/opencv.git
 ```
 
 If you get an error like this:
