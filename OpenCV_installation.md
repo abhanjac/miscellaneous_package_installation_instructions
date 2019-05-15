@@ -112,6 +112,12 @@ This library can be linked with the opencv during compilation and if done, then 
 For this you have to add the following command during installation, `cmake -D WITH_IPP=ON`. The speed improvement can be a lot. 
 But you have to have an intel processor for this, it will not happen on ARM processors and I have not tested it either.
 
+
+But often you do not need so many options to be activated, and the following one is sufficient in most cases.
+```
+sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_C_EXAMPLES=OFF -D INSTALL_PYTHON_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D BUILD_EXAMPLES=ON ..
+```
+    
 #### Installation:
 Next, type the following (while inside the 'opencv/release' directory):
 
