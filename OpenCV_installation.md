@@ -173,6 +173,7 @@ This is because some of these libraries may be archived libraries and so you hav
 # Removing OpenCV:
 
 If you remove the **opencv** folder (where you cloned the package) after the installation is complete, even then you can use **cv2**, as the **.so** files are all in the **/usr/local/lib** directory.
-If you want to remove or uninstall opencv, then remove all the files having names starting with **libopencv** from this **/usr/local/lib** directory.
+If you want to remove or uninstall opencv, then remove all the files having names starting with **libopencv** from this **/usr/local/lib** directory, and also any opencv folder **/usr/local/share/** directory and **home** directory.
+
 
 
