@@ -13,7 +13,7 @@ sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libj
 sudo apt-get install checkinstall yasm libxine2-dev libv4l-dev libav-tools
 sudo apt-get install unzip libdc1394-22 libpng12-dev libtiff5-dev tar dtrx 
 sudo apt-get install libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 
-sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libqt4-dev libmp3lame-dev 
+sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libqt4-dev libmp3lame-dev libgtk2.0-dev
 ```
 
 #### Getting OpenCV Source Code:
