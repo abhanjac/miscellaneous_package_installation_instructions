@@ -1,4 +1,4 @@
-# Ubuntu 16.04 Install on Odroid XU4
+# Ubuntu 16.04 LTS Install on Odroid XU4
 * Reference: [Odroid XU4 Official Wiki](https://wiki.odroid.com/odroid-xu4/odroid-xu4)
 
 ## SD/eMMC Card Preparation
