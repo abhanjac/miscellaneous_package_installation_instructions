@@ -150,3 +150,25 @@ sudo su         [ become root ]
 adb install <name-of.apk>
 ```
 
+### To uninstall Anbox:
+
+References: [1](https://dev.to/xeroxism/how-to-install-anbox-in-ubuntu-linux-26d3)
+
+If you want to remove Anbox from your system you first have to remove the snap.
+By removing the snap you remove all data you stored within the snap from your system. There is no way to bring it back.
+
+```
+snap remove anbox
+```
+
+Once the snap is removed you have to remove the installed kernel modules as well:
+
+```
+sudo apt install ppa-purge
+sudo ppa-purge ppa:morphis/anbox-support
+```
+
+After which Anbox would have been removed from your system.
+
+
+
