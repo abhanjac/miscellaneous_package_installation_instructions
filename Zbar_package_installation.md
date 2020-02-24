@@ -15,3 +15,4 @@ sudo apt-get install libzbar0 libzbar-dev
 ```
 
 #### Install Zbarlight:
+```
