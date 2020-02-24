@@ -17,3 +17,28 @@ sudo apt-get install libzbar0 libzbar-dev
 #### Install Zbarlight:
 ```
 git clone https://github.com/Polyconseil/zbarlight.git
+cd zbarlight
+sudo python setup.py install
+```
+
+#### Run and Check:
+Once the package has been installed, you can try to import it in a python script and see if it works properly.
+You can check if it works by reading a qrcode file (if available) using the following code.
+
+```
+python
+>>> from PIL import Image
+>>> import zbarlight
+>>>
+>>> file_path = './qrcode_0044.png'
+>>> with open(file_path, 'rb') as image_file:
+        image = Image.open(image_file)
+        image.load()
+
+>>> codes = zbarlight.scan_codes('qrcode', image)
+>>> print('QR codes: %s' % codes)
+```
+
+
+
+
