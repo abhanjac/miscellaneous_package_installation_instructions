@@ -23,3 +23,9 @@ If this throws an error like the  *"Failed to import pyassimp"*.
 
 Then you have to install **pyassimp** properly (as mentioned [here](https://github.com/ros-planning/moveit/issues/86).
 
+#### Install Pyassimp:
+```
+git clone https://github.com/assimp/assimp.git 
+```
+The instructions to build it is in the assimp folder create after cloning it, is given in the INSTALL file inside this folder.
+
