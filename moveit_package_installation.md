@@ -4,3 +4,8 @@ The **Moveit** package tutorial is obtained in this [link](http://docs.ros.org/m
 
 This package is used for robotic arm manipulation. 
 
+#### Install Moveit:
+```
+sudo apt install ros-kinetic-moveit
+```
+If you are using ros melodic, then just replace the word kinetic to melodic in the above command.
