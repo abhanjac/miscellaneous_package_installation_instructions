@@ -19,3 +19,7 @@ python
 >>> import moveit_commander
 ```
 
+If this throws an error like the  *"Failed to import pyassimp"*.
+
+Then you have to install **pyassimp** properly (as mentioned [here](https://github.com/ros-planning/moveit/issues/86).
+
