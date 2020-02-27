@@ -14,3 +14,8 @@ If you are using ros melodic, then just replace the word kinetic to melodic in t
 Once the package has been installed, you can try to import it in a python script and see if it works properly.
 Just see if you can import moveit_commander in python.
 
+```
+python
+>>> import moveit_commander
+```
+
