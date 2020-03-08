@@ -20,3 +20,5 @@ git clone https://github.com/Polyconseil/zbarlight.git
 cd zbarlight
 sudo python setup.py install
 ```
+
+#### Run and Check:
