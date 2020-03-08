@@ -29,3 +29,5 @@ You can check if it works by reading a qrcode file (if available) using the foll
 python
 >>> from PIL import Image
 >>> import zbarlight
+>>> from PIL import Image
+>>> import zbarlight
