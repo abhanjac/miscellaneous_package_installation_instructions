@@ -18,3 +18,5 @@ sudo apt-get install libzbar0 libzbar-dev
 ```
 git clone https://github.com/Polyconseil/zbarlight.git
 cd zbarlight
+sudo python setup.py install
+```
