@@ -11,3 +11,6 @@ zbarlight is hosted on Github at this [link](https://github.com/Polyconseil/zbar
 
 #### Install Dependencies:
 ```
+sudo apt-get install libzbar0 libzbar-dev
+```
+
