@@ -24,3 +24,5 @@ sudo python setup.py install
 #### Run and Check:
 Once the package has been installed, you can try to import it in a python script and see if it works properly.
 You can check if it works by reading a qrcode file (if available) using the following code.
+
+```
