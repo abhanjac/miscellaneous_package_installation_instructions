@@ -1,20 +1,16 @@
-# Installing Zbar package for reading QRcodes:
+# Installing PCL package for point cloud processing:
 
-The **qrcode decoder** package is obtained in this [link](https://pypi.python.org/pypi/zbarlight)
+This package is used to process the point clouds from depth sensors and lidars.
 
-This package can decode the information inside a qrcode when it is fed into the functions in this package using a python script.
-But it can only decode the image of a pure qrcode, i.e. the image should entirely contain only the qrcode. Qrcode in a part of an image cannot be decoded using zbarlight.
+Some references for installation can also be found in this [link](https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for).
 
-zbarlight is a simple wrapper for the zbar library. For now, it only allows to read QR codes but contributions, suggestions and pull requests are welcome.
-zbarlight is compatible with Python 2 and Python 3.
-zbarlight is hosted on Github at this [link](https://github.com/Polyconseil/zbarlight/).
-
-#### Install Dependencies:
+#### Install Oracle-java8-jdk:
 ```
-sudo apt-get install libzbar0 libzbar-dev
+sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update && sudo apt -y install oracle-java8-installer
 ```
+But if this installation does not happen and incurs problems due to some errors, then proceed to the next steps, move on.
 
-#### Install Zbarlight:
+#### Install universal pre-requisites:
 ```
 git clone https://github.com/Polyconseil/zbarlight.git
 cd zbarlight
