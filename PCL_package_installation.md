@@ -140,6 +140,8 @@ hello, world!
 
 #### Adding ROS to the file:
 
+This [link](https://answers.ros.org/question/237494/fatal-error-rosrosh-no-such-file-or-directory/) also talks about how to include ROS.
+
 Modify the CMakeLists.txt file.
 
 ```
