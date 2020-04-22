@@ -138,5 +138,57 @@ The correct output in the terminal will be:
 
 hello, world!
 
+#### Adding ROS to the file:
 
+Modify the CMakeLists.txt file.
 
+```
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+project(pcl-test)
+
+# For PCL.
+find_package(PCL 1.2 REQUIRED)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+# For ROS.
+find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs geometry_msgs message_generation)
+include_directories(${catkin_INCLUDE_DIRS})
+
+# Adding executable and link libraries.
+add_executable(pcl-test main.cpp)
+target_link_libraries(pcl-test ${PCL_LIBRARIES})
+target_link_libraries(pcl-test ${catkin_LIBRARIES})
+
+SET(COMPILE_FLAGS "-std=c++11")
+add_definitions(${COMPILE_FLAGS})
+```
+
+Modify the main.cpp file.
+
+```
+#include <iostream>
+#include "ros/ros.h"
+
+int main() {
+    std::cout << "hello, world!" << std::endl;
+    std::cout << "ROS header file is included." << std::endl;
+    return (0);
+}
+```
+
+Now compile the main.cpp file and retest:
+
+```
+cd build
+cmake ..
+make
+
+./pcl-test
+```
+
+The correct output in the terminal will be:
+
+hello, world!
+ROS header file is included.
