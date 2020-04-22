@@ -3,6 +3,7 @@
 This package is used to process the point clouds from depth sensors and lidars.
 
 Some references for installation can also be found in this [link](https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for).
+Some references to understand the structure of the **CMakeLists.txt** file (which will be created later) can be found in this [link](https://answers.ros.org/question/237494/fatal-error-rosrosh-no-such-file-or-directory/).
 
 #### Install Oracle-java8-jdk:
 ```
@@ -90,12 +91,14 @@ Now write the following in the CMakeLists.txt file.
 ```
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 project(pcl-test)
-find_package(PCL 1.2 REQUIRED)
 
+# For PCL.
+find_package(PCL 1.2 REQUIRED)
 include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
+# Adding adding executable and linking libraries.
 add_executable(pcl-test main.cpp)
 target_link_libraries(pcl-test ${PCL_LIBRARIES})
 
