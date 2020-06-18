@@ -22,6 +22,10 @@ sudo apt -y install phonon-backend-vlc graphviz mono-complete qt-sdk libflann-de
 ```
 sudo apt -y install libflann1.8 libboost1.58-all-dev
 
+If the above does not work, then use the following command:
+
+sudo apt -y install libflann-dev libboost-all-dev
+
 cd ~/Downloads
 wget http://launchpadlibrarian.net/209530212/libeigen3-dev_3.2.5-4_all.deb
 sudo dpkg -i libeigen3-dev_3.2.5-4_all.deb
