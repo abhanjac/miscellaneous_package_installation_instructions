@@ -133,7 +133,7 @@ int main() {
 ```
 mkdir build && cd build
 cmake ..
-make
+make -j4
 
 ./pcl-test
 ```
@@ -189,7 +189,7 @@ Now compile the main.cpp file and retest:
 ```
 cd build
 cmake ..
-make
+make -j4
 
 ./pcl-test
 ```
