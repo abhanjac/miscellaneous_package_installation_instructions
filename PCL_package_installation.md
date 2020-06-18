@@ -60,7 +60,7 @@ wget http://www.vtk.org/files/release/8.0/VTK-8.0.1.tar.gz
 tar -xf VTK-8.0.1.tar.gz
 cd VTK-8.0.1 && mkdir build && cd build
 cmake ..
-make -j4                                                                   
+make -j4
 sudo make install
 
 cd ~/Downloads
