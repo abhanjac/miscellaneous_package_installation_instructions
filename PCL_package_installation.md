@@ -35,7 +35,7 @@ wget http://www.vtk.org/files/release/7.1/VTK-7.1.0.tar.gz
 tar -xf VTK-7.1.0.tar.gz
 cd VTK-7.1.0 && mkdir build && cd build
 cmake ..
-make                                                                   
+make -j4
 sudo make install
 
 cd ~/Downloads
@@ -43,7 +43,7 @@ wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.0.tar.gz
 tar -xf pcl-1.8.0.tar.gz
 cd pcl-pcl-1.8.0 && mkdir build && cd build
 cmake ..
-make
+make -j4
 sudo make install
 
 cd ~/Downloads
@@ -60,7 +60,7 @@ wget http://www.vtk.org/files/release/8.0/VTK-8.0.1.tar.gz
 tar -xf VTK-8.0.1.tar.gz
 cd VTK-8.0.1 && mkdir build && cd build
 cmake ..
-make                                                                   
+make -j4                                                                   
 sudo make install
 
 cd ~/Downloads
@@ -68,7 +68,7 @@ wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz
 tar -xf pcl-1.8.1.tar.gz
 cd pcl-pcl-1.8.1 && mkdir build && cd build
 cmake ..
-make
+make -j4
 sudo make install
 
 cd ~/Downloads
