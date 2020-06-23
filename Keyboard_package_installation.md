@@ -1,7 +1,7 @@
 # Installing Keyboard package:
 
 The **Keyboard** package can be used to detect keys which are pressed on the keyboard or anything else related to the keyboard actions.
- here we will only site the example for detecting key presses on the keyboard. 
+But here we will only site the example for detecting key presses on the keyboard. 
 
 This package is obtained in this [link](https://pypi.org/project/keyboard/) and the installation instructions are also given in details in there.
 
