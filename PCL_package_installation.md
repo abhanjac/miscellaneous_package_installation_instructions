@@ -1,6 +1,8 @@
 # Installing PCL package for point cloud processing:
 
 This package is used to process the point clouds from depth sensors and lidars.
+The first part of the installation guide is for installing the PCL library for C++.
+At the very end there is the instructions for installing the PCL library for Python.
 
 Some references for installation can also be found in this [link](https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for).
 Some references to understand the structure of the **CMakeLists.txt** file (which will be created later) can be found in this [link](https://answers.ros.org/question/237494/fatal-error-rosrosh-no-such-file-or-directory/).
@@ -198,3 +200,49 @@ The correct output in the terminal will be:
 
 hello, world!
 ROS header file is included.
+
+# Installing PCL package for python:
+
+The installation guide is found in this [link](https://python-pcl-fork.readthedocs.io/en/rc_patches4/install.html).
+
+Run the following command:
+
+```
+pip install python-pcl
+```
+
+If there are errors, then try to update the pip version first.
+
+```
+sudo pip install --upgrade pip
+```
+
+Then run the **pip install python-pcl** command.
+
+There may be an error like the following with the package called **Cython**.
+
+```
+ERROR: Could not find a version that satisfies the requirement Cyththon (from versions: none)
+ERROR: No matching distribution found for Cyththon
+```
+
+If that happens, then use the following solution as suggested in this [link](https://stackoverflow.com/questions/53807511/pip-cannot-uninstall-package-it-is-a-distutils-installed-project) by running the following command:
+
+```
+pip install --ignore-installed Cython
+```
+
+Then run the following if the above command succeeds.
+
+```
+pip install python-pcl
+```
+
+#### Run and check:
+
+```
+python
+
+>>> import pcl
+>>> 
+```
